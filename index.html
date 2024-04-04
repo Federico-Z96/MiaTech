@@ -7,7 +7,7 @@
       name="description"
       content="Questa è una breve descrizione del mio sito web."
     />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Esercizi HTML</title>
   </head>
   <body>
@@ -66,13 +66,30 @@
           />
         </div>
         <div>
-          <img src="/components/cloud-svgrepo-com.svg" alt="" width="350px" height="350px">
-          <svg width="350px" height="350px" viewBox="0 0 24 24" fill="green" xmlns="http://www.w3.org/2000/svg">
-            <path d="M3 13.6493C3 16.6044 5.41766 19 8.4 19L16.5 19C18.9853 19 21 16.9839 21 14.4969C21 12.6503 19.8893 10.9449 18.3 10.25C18.1317 7.32251 15.684 5 12.6893 5C10.3514 5 8.34694 6.48637 7.5 8.5C4.8 8.9375 3 11.2001 3 13.6493Z" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
+          <img
+            src="/components/cloud-svgrepo-com.svg"
+            alt=""
+            width="350px"
+            height="350px"
+          />
+          <svg
+            width="350px"
+            height="350px"
+            viewBox="0 0 24 24"
+            fill="green"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M3 13.6493C3 16.6044 5.41766 19 8.4 19L16.5 19C18.9853 19 21 16.9839 21 14.4969C21 12.6503 19.8893 10.9449 18.3 10.25C18.1317 7.32251 15.684 5 12.6893 5C10.3514 5 8.34694 6.48637 7.5 8.5C4.8 8.9375 3 11.2001 3 13.6493Z"
+              stroke="red"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
         </div>
         <div>
-          <img src="/components/ecosistema Dapp.svg" alt="">
+          <img src="/components/ecosistema Dapp.svg" alt="" />
         </div>
       </section>
       <section class="section_3">
@@ -84,8 +101,30 @@
       <section class="section_4">
         <div>
           <form action="">
-            <label for="name">inserire name:</label>
-            <input type="text" id="name" name="testo" placeholder="testo da inserire qui">
+            <label for="name">inserire nome:</label>
+            <input type="text" id="name" name="name" placeholder="nome" />
+            <label for="surname">inserire cognome:</label>
+            <input
+              type="text"
+              id="surname"
+              name="surname"
+              placeholder="surname"
+            />
+            <p>please select your gender:
+            <input type="radio" name="gender" value="male" />male
+            <input type="radio" name="gender" value="female" /> female
+            <input type="radio" name="gender" value="not specified" /> not specified
+            </p>
+            <p>why you choose this broswer:</p>
+            <textarea
+              name="description"
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Scrivi i tuoi commenti..."
+            >
+              write your comments...
+            </textarea>
           </form>
         </div>
       </section>
