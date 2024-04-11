@@ -1,0 +1,25 @@
+p{
+    color: blueviolet;
+    text-align: right;
+}
+h1{
+    color:aqua;
+}
+h2{
+    color: aquamarine;
+}
+h3{
+    color: beige;
+}
+h4{
+    color: bisque;
+}
+h5{
+    color: brown;
+}
+h6{
+    color: blue;
+}
+#h5_style{
+    background-color: blue;
+}
