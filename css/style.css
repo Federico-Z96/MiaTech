@@ -21,6 +21,7 @@
 
 .margin{
     margin-top: 150px;
+    margin-right: 48%;
 }
 p{
     color: blueviolet;
@@ -53,3 +54,19 @@ h6{
 div p {
     text-align: left;
 }
+.flexb{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.foto{
+    width: 100px;
+    height: 100px;
+}
+a {
+    color: antiquewhite;
+}
+a:hover {
+    color: red;
+    cursor: pointer;
+  }
