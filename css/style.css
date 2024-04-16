@@ -50,3 +50,6 @@ h5{
 h6{
     color: blue;
 }
+div p {
+    text-align: left;
+}
