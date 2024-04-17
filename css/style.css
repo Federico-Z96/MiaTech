@@ -22,7 +22,7 @@
   margin-top: 150px;
   margin-right: 48%;
 }
-p {
+.paragrafo {
   color: blueviolet;
   text-align: right;
 }
@@ -77,4 +77,14 @@ ul li {
 ul li:last-child {
     color: red;
     font-weight: bold;
+  }
+
+  p{
+    color: aquamarine;
+  }
+  .class__color{
+    color:blue
+  }
+  #id__color{
+    color: brown;
   }
