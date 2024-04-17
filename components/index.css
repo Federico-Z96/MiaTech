@@ -5,3 +5,6 @@
 #p_2{
     color: #ff0000;
 }
+div p {
+    color: rgba(255, 0, 0, 0.7);
+}
