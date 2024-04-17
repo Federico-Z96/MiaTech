@@ -11,3 +11,8 @@ div p {
 #p_3{
     color: red;
 }
+.pixel_test{
+  border: 5px solid ; 
+  width: 500px;
+  height: 500px; 
+}
