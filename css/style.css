@@ -50,7 +50,7 @@ h5 {
 h6 {
   color: blue;
 }
-div p {
+.div-p {
   text-align: left;
 }
 .flexb {
@@ -69,12 +69,12 @@ a:hover {
   color: red;
   cursor: pointer;
 }
-ul li {
+.ul-li {
     color: antiquewhite;
 }
 
 /*pseudo elemento*/
-ul li:last-child {
+ ul li:last-child {
     color: red;
     font-weight: bold;
   }
@@ -87,4 +87,10 @@ ul li:last-child {
   }
   #id__color{
     color: brown;
+  }
+  
+
+  div {
+    color: blue;
+    text-align: right;
   }
