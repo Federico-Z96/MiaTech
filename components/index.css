@@ -16,3 +16,9 @@ div p {
   width: 500px;
   height: 500px; 
 }
+.test_percentuale{
+    margin-left: 10px;
+    border: 5px solid;
+    width: 20%;
+    height: 20%;
+}
