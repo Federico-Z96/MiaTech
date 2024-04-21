@@ -1,4 +1,10 @@
 
+@import url(./template/root.css);
+
+*{
+    background-color: var(--color-primary);
+}
+
 #p_1{
     color: rgb(255, 0, 0);
 } 
@@ -26,6 +32,9 @@ div p {
     border: 5px solid;
     width: 20%;
     height: 20%;
+}
+footer div{
+    font-size: 10px;
 }
 .div_p1{
     font-size: 7rem;
