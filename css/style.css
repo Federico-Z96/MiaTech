@@ -1,5 +1,12 @@
 .flex {
   display: flex;
-  flex-direction: column-reverse;
-  gap: 20px;
+  flex-direction: colum-reverse;
+  flex-wrap: wrap;
+  gap: 200px;
+}
+
+.card {
+  border: solid green;
+  height: 400px;
+  width: 500px;
 }
