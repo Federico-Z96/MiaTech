@@ -1,0 +1,9 @@
+@import url(./template/root.css);
+
+* {
+  background-color: var(--color-primary);
+}
+.flex {
+  display: flex;
+  flex-direction: row;
+}
