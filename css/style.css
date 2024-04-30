@@ -1,6 +1,5 @@
 .flex {
   display: flex;
-  flex-direction: column-reverse;
   flex-wrap: wrap;
   gap: 200px;
   align-items: center;
@@ -9,6 +8,15 @@
 
 .card {
   border: solid green;
-  height: 400px;
-  width: 500px;
+ 
+}
+
+.card_3 {
+  flex-grow: 2;
+}
+.card_1 {
+flex-grow: 1;
+} 
+.card_2 {
+  flex-basis: 120px;
 }
