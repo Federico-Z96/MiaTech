@@ -1,22 +1,24 @@
 .flex {
+  border: solid red;
+  height: 500px;
   display: flex;
-  flex-wrap: wrap;
   gap: 200px;
   align-items: center;
-  justify-content: center;
 }
 
 .card {
   border: solid green;
- 
+  margin: 10px;
 }
 
 .card_3 {
   flex-grow: 2;
+  align-self: flex-start;
 }
 .card_1 {
-flex-grow: 1;
+flex-shrink: 2;
+align-self: flex-end;
 } 
 .card_2 {
-  flex-basis: 120px;
+  flex-basis: 100px;
 }
