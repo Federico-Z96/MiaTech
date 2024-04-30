@@ -1,11 +1,15 @@
 @import url(./template/root.css);
 
-
-.p__1{
+.p__1 {
   padding: 500px;
   padding-left: 800px;
   background-color: var(--color-primary);
   margin: 25px;
   border: solid green;
   border-radius: 35%;
+}
+
+li {
+  display: inline-block;
+  margin-right: 25px;
 }
