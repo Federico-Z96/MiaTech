@@ -33,8 +33,11 @@ main{
 
 footer{
   height: 75px;
+  width: 100%;
   background-color: gray;
   border: 0.25rem solid white;
+  position: relative;
+  top: 200px;
 }
 p{
   text-align: center;
