@@ -38,6 +38,20 @@ footer{
 }
 p{
   text-align: center;
+} 
+
+div {
+  border:1px solid black;
+  height: 180px;
+}
+.paragraph {
+  float: left;
+}
+
+.img-1 {
+  width: 150px;
+  height: 150px;
+  float: right;
 }
 
 
