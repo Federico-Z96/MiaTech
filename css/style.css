@@ -1,24 +1,42 @@
-.flex {
-  border: solid red;
+
+
+header{
+  height: 100px;
+  background-color: gray;
+  border: 0.25rem solid white;
+}
+
+nav{
+  background-color: gray;
+  height: 50px;
+  border: 0.25rem solid white;
+}
+
+section{
   height: 500px;
-  display: flex;
-  gap: 200px;
-  align-items: center;
+  background-color: gray;
+  border: 0.25rem solid white;
+  display: inline-block;
+  width: 20%;
+  margin: 1px;
 }
 
-.card {
-  border: solid green;
-  margin: 10px;
+main{
+  height: 500px;
+  background-color: gray;
+  border: 0.25rem solid white;
+  position: relative;
+  display: inline-block;
+  width: 58%;
 }
 
-.card_3 {
-  flex-grow: 2;
-  align-self: flex-start;
+footer{
+  height: 75px;
+  background-color: gray;
+  border: 0.25rem solid white;
 }
-.card_1 {
-flex-shrink: 2;
-align-self: flex-end;
-} 
-.card_2 {
-  flex-basis: 100px;
+p{
+  text-align: center;
 }
+
+
