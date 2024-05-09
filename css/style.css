@@ -10,7 +10,6 @@ nav{
   background-color: gray;
   height: 50px;
   border: 0.25rem solid white;
-  display: none;
 }
 
 section{
@@ -38,10 +37,10 @@ footer{
 }
 p{
   text-align: center;
+  border: 1px solid black;
 } 
 
-div {
-  border:1px solid black;
+.div-1 {
   height: 180px;
 }
 .paragraph {
@@ -54,4 +53,7 @@ div {
   float: right;
 }
 
+.p-2 {
+  clear: both;
+}
 
