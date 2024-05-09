@@ -57,3 +57,25 @@ p{
   clear: both;
 }
 
+.div-column {
+  position: relative;
+}
+
+.col{
+  width: 100px;
+  height: 150px;
+  position: absolute;
+}
+
+.col-{
+  left: 0;
+}
+
+.col-2{
+  left: 33.33%;
+}
+
+.col-3{
+  left: 66.66%;
+}
+
