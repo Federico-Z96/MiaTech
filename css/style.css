@@ -93,7 +93,7 @@ p{
 }
 
 .card {
-  border: solid black;
+  border: solid rgb(0, 200, 255);
   width: 200px;
   height: 350px;
   position: relative;
@@ -103,11 +103,10 @@ p{
   position: relative;
   color: aliceblue;
 }
-.close-icon {
+.icon {
   position: absolute;
   top: 10px;
   right: 10px;
-  /* Altri stili per l'icona "X" */
 }
 
 img {
