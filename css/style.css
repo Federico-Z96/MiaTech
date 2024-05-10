@@ -83,3 +83,11 @@ p{
   left: 66.66%;
 }
 
+.square {
+  border: 5px solid rgb(156, 0, 253);
+  width: 25rem;
+  height: 25rem;
+  position: fixed;
+  bottom: 0;
+  left: 10px;
+}
