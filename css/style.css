@@ -15,10 +15,13 @@
 }
 
 .div-template {
+  height: 400px;
   display: grid;
   grid-template-columns: repeat(5, auto);
   gap: 10px;
   grid-template-rows: auto 200px;
+  justify-content: center;
+  align-items: center;
 }
 .div-template div {
   background-color: aqua;
