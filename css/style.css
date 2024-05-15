@@ -1,4 +1,15 @@
 .div-container {
   display: grid;
   grid-template-columns: repeat(3, auto);
+  gap: 10px;
+}
+.div-container div {
+  background-color: gray;
+}
+
+.div-container div:nth-child(4) {
+  display: none;
+}
+.div-container div:first-child {
+  grid-row: span 2;
 }
