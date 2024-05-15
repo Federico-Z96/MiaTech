@@ -26,3 +26,22 @@
 .div-template div {
   background-color: aqua;
 }
+
+.calculator-grid {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 10px;
+  width: 200px;
+  justify-content: center;
+  align-items: center;
+}
+
+.border {
+  border: 1px solid black;
+}
+
+.items {
+  background-color: gray;
+  text-align: center;
+  width: 30px;
+}
