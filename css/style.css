@@ -18,6 +18,7 @@
   display: grid;
   grid-template-columns: repeat(5, auto);
   gap: 10px;
+  grid-template-rows: auto 200px;
 }
 .div-template div {
   background-color: aqua;
