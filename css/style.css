@@ -13,3 +13,12 @@
 .div-container div:first-child {
   grid-row: span 2;
 }
+
+.div-template {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  gap: 10px;
+}
+.div-template div {
+  background-color: aqua;
+}
