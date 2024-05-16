@@ -1,36 +1,9 @@
 @import url(./template/root.css);
 
-.p__1 {
-  padding: 500px;
-  padding-left: 800px;
-  background-color: var(--color-primary);
-  margin: 25px;
-  border: solid green;
-  border-radius: 35%;
-}
-
-li {
-  display: inline-block;
-  margin-right: 25px;
-}
-span {
-  height: 50px;
-  width: 100px;
+.full-size {
+  width: 100vw;
+  height: 100vh;
   background-color: blueviolet;
-  border: solid 5px;
-  margin: 25px;
+  text-align: center;
+  padding-top: 50vh;
 }
-
-#span__1 {
-  display: inline;
-}
-
-#span__2 {
-  display: inline-block;
-}
-
-
-#span__3 {
-  display: block;
-}
-
