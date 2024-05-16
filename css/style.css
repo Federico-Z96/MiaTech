@@ -28,6 +28,7 @@
 }
 
 .calculator-grid {
+  margin-left: 30rem;
   display: grid;
   grid-template-columns: repeat(4, auto);
   gap: 10px;
@@ -51,4 +52,23 @@
     background-color: blue;
   }
   
+  body .calculator-grid {
+    margin: auto;
+    margin-top: 2rem;
+  }
+
+  body .div-template {
+    grid-template-columns: repeat(2, auto);
+    margin-top: 2rem;
+  }
+
+  body .div-container {
+    margin-top: 2rem;
+    grid-template-columns: repeat(1, auto);
+    justify-content: center;
+  }
+
+  .div-container div {
+    background-color: yellow;
+  }
 }
