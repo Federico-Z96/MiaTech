@@ -1,3 +1,7 @@
+.bg-grey, nav ul li:nth-child(4) {
+  background-color: #e7e7e7;
+}
+
 nav ul {
   display: flex;
   list-style: none;
@@ -16,6 +20,10 @@ nav ul li a {
 }
 nav ul li a:hover {
   color: #ff0000;
+}
+nav ul li:nth-child(4) {
+  border: 1px solid;
+  border-color: #333333;
 }
 
 /*# sourceMappingURL=index-test.css.map */

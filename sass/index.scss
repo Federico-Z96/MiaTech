@@ -2,6 +2,10 @@
 $color-primary: #ff0000;
 $font-size: 18px;
 
+.bg-grey {
+   background-color: #e7e7e7;
+}
+
 nav {
    ul {
       display: flex;
@@ -19,6 +23,12 @@ nav {
             &:hover {
                color: $color-primary;
             }
+         }
+         
+         &:nth-child(4){
+            border: 1px solid;
+            border-color: #333333;
+            @extend .bg-grey;
          }
       }
 
