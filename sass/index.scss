@@ -1,36 +1,66 @@
+@import "functon";
+@import "color";
 
-$color-primary: #ff0000;
 $font-size: 18px;
 
 .bg-grey {
-   background-color: #e7e7e7;
+  background-color: #e7e7e7;
+}
+.div_box {
+  width: 200px;
+  height: 200px;
+  border: 1px solid;
+  margin: 20px;
+} 
+
+* {
+  display: flex;
+  flex-direction: column;
 }
 
 nav {
-   ul {
-      display: flex;
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      justify-content: center;
-      li {
-         margin-right: 20px;
-         a {
-            text-transform: uppercase;
-            text-decoration: none;
-            color: black;
-            font-size: $font-size;
-            &:hover {
-               color: $color-primary;
-            }
-         }
-         
-         &:nth-child(4){
-            border: 1px solid;
-            border-color: #333333;
-            @extend .bg-grey;
-         }
+  border: 1px solid $color-secondary; 
+  ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    li {
+      width: 25%;
+      margin-right: 20px;
+      a {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: black;
+        font-size: $font-size;
+        &:hover {
+          color: $color-primary;
+        }
       }
 
-   }
+      &:nth-child(4) {
+        border: 1px solid;
+        border-color: #333333;
+        @extend .bg-grey;
+      }
+    }
+  }
+}
+header {
+  section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    div {
+      @extend .div_box;
+      &:nth-child(1) {
+         width: larghezza-terzo(600px);
+      }
+      &:nth-child(2) {
+         width: 600px;
+      }
+    }
+  }
 }
