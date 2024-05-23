@@ -6,12 +6,31 @@ $font-size: 18px;
 .bg-grey {
   background-color: #e7e7e7;
 }
+
 .div_box {
   width: 200px;
   height: 200px;
   border: 1px solid;
   margin: 20px;
 } 
+
+@mixin theme_mode ($theme_color, $font_color, $font_hover){
+  background-color: $theme_color;
+  
+  a {
+    color: $font_color;
+    &:hover {
+    color: $font_hover;
+    }
+  } 
+}
+
+.dark_mode {
+  @include theme_mode($background-dark, $font_dark, $hover_font);
+}
+.light_mode {
+  @include theme_mode($background-light, $color-tertiary, $color-primary);
+}
 
 * {
   display: flex;
@@ -20,6 +39,7 @@ $font-size: 18px;
 
 nav {
   border: 1px solid $color-secondary; 
+  @extend .dark_mode;
   ul {
     display: flex;
     flex-direction: row;
@@ -33,11 +53,11 @@ nav {
       a {
         text-transform: uppercase;
         text-decoration: none;
-        color: black;
+       // color: black;
         font-size: $font-size;
-        &:hover {
-          color: $color-primary;
-        }
+      //  &:hover {
+     //  color: $color-primary;
+     //   }
       }
 
       &:nth-child(4) {
@@ -48,7 +68,7 @@ nav {
     }
   }
 }
-header {
+main {
   section {
     display: flex;
     flex-direction: row;
@@ -59,7 +79,7 @@ header {
          width: larghezza-terzo(600px);
       }
       &:nth-child(2) {
-         width: 600px;
+         width: 100%;
       }
     }
   }

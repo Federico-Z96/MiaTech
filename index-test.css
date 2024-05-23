@@ -2,11 +2,31 @@
   background-color: #e7e7e7;
 }
 
-.div_box, header section div {
+.div_box, main section div {
   width: 200px;
   height: 200px;
   border: 1px solid;
   margin: 20px;
+}
+
+.dark_mode, nav {
+  background-color: #000000;
+}
+.dark_mode a, nav a {
+  color: #ffffff;
+}
+.dark_mode a:hover, nav a:hover {
+  color: #ffea00;
+}
+
+.light_mode {
+  background-color: #c3fefb;
+}
+.light_mode a {
+  color: #000000;
+}
+.light_mode a:hover {
+  color: #ff0000;
 }
 
 * {
@@ -32,27 +52,23 @@ nav ul li {
 nav ul li a {
   text-transform: uppercase;
   text-decoration: none;
-  color: black;
   font-size: 18px;
-}
-nav ul li a:hover {
-  color: #ff0000;
 }
 nav ul li:nth-child(4) {
   border: 1px solid;
   border-color: #333333;
 }
 
-header section {
+main section {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-header section div:nth-child(1) {
+main section div:nth-child(1) {
   width: 200px;
 }
-header section div:nth-child(2) {
-  width: 600px;
+main section div:nth-child(2) {
+  width: 100%;
 }
 
 /*# sourceMappingURL=index-test.css.map */
