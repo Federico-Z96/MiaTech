@@ -1,3 +1,7 @@
 @function larghezza-terzo($larghezza-secondo) {
-    @return $larghezza-secondo / 3;
+    @return calc($larghezza-secondo / 3)  ;
   }
+
+@function  da-px-a-em($px, $font_px) {
+    @return calc($px / $font_px)* 1em;
+}

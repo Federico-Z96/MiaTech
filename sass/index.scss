@@ -12,6 +12,7 @@ $font-size: 18px;
   height: 200px;
   border: 1px solid;
   margin: 20px;
+  font-size: da-px-a-em(30px, $font-size);
 } 
 
 @mixin theme_mode ($theme_color, $font_color, $font_hover){
@@ -54,7 +55,7 @@ nav {
         text-transform: uppercase;
         text-decoration: none;
        // color: black;
-        font-size: $font-size;
+        font-size: da-px-a-em(18px, $font-size);
       //  &:hover {
      //  color: $color-primary;
      //   }
