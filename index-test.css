@@ -34,13 +34,13 @@ section div:nth-child(2) {
   font-size: 1.6666666667em;
 }
 
-.dark_mode, nav {
+.dark_mode {
   background-color: #000000;
 }
-.dark_mode a, nav a {
+.dark_mode a {
   color: #ffffff;
 }
-.dark_mode a:hover, nav a:hover {
+.dark_mode a:hover {
   color: #ffea00;
 }
 
