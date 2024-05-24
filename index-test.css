@@ -1,3 +1,11 @@
+section div:nth-child(1) {
+  background-color: #50225f;
+}
+
+section div:nth-child(2) {
+  background-color: #200e26;
+}
+
 .bg-grey, nav ul li:nth-child(4) {
   background-color: #e7e7e7;
 }

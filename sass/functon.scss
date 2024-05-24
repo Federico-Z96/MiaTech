@@ -1,7 +1,15 @@
+@import "color";
+
 @function larghezza-terzo($larghezza-secondo) {
     @return calc($larghezza-secondo / 3)  ;
   }
 
 @function  da-px-a-em($px, $font_px) {
     @return calc($px / $font_px)* 1em;  
+}
+
+@for $i from 1 through 2 {
+  section div:nth-child(#{$i}) {
+    background-color: darken($background-div, $i * 15%);
+ }
 }
