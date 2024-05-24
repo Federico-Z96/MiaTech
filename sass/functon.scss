@@ -1,15 +1,43 @@
 @import "color";
 
 @function larghezza-terzo($larghezza-secondo) {
-    @return calc($larghezza-secondo / 3)  ;
-  }
+  @return calc($larghezza-secondo / 3);
+}
 
-@function  da-px-a-em($px, $font_px) {
-    @return calc($px / $font_px)* 1em;  
+@function da-px-a-em($px, $font_px) {
+  @return calc($px / $font_px) * 1em;
 }
 
 @for $i from 1 through 2 {
   section div:nth-child(#{$i}) {
     background-color: darken($background-div, $i * 15%);
- }
+  }
 }
+
+$colors: $color-primary, $color-secondary, $background-dark, $background_div;
+//@each $color in $colors {
+// .colori-#{$color} {
+//    color: $color;
+//  }
+//}
+
+//$colors: #ff0000, #00ff00, #000000, #803697;
+@each $color in $colors {
+  .colori-#{index($colors, $color)} {
+    color: $color;
+  }
+}
+
+
+//$colors: (
+ // "red": #FF0000,
+ // "green": #00FF00,
+  //"blue": #0000FF,
+ // "yellow": #FFFF00
+//);
+
+//@each $name, $color in $colors {
+//  .colori-#{$name} {
+ //   color: $color;
+ // }
+//}
