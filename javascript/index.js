@@ -41,3 +41,20 @@ for (let i = 0; i <= 20; i++) {            // indentazione del ciclo per iterare
 
 }
 console.log("pari: " + arr1 , "dispari: " +  arr2);
+
+const arr3 =[];
+for (let i = 0; i <= 20; i = i + 2) {                //raramente si usera addizionare a i + 2 
+    arr3.push(i);                                    //si può scrivere anche i += 2
+}
+console.log(arr3);
+
+//Es 6:
+let ii = 10 ;                           // while = iterazione che verrà interrotta appena sarà falsa la condizione
+const arrDispari = [];
+while(ii >= 1){                         // dichiarazione condizione, il ciclo verrà effettutato 
+    if(ii % 2 !== 0){                   // fintanto che la condizione sarà true 
+        arrDispari.push(ii);
+    } 
+    ii--;                               // incremento o decremento è sempre necessario per evitare un loop 
+}
+console.log(arrDispari);
