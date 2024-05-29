@@ -87,7 +87,7 @@ if( number > 5 ) {
 //Es 11:
 let score = parseInt(prompt("inserisci numero"));
 
-if(score >= 90 && score <= 100 ) {
+/*if(score >= 90 && score <= 100 ) {
     console.log("voto ottimo");
 }else if( score >= 70 && score <=89) {
     console.log("voto buono");
@@ -96,5 +96,28 @@ if(score >= 90 && score <= 100 ) {
 }else if(score <= 59 && score == 0) {
     console.log("voto insufficiente");
 } else {
-    console.log("non è un numero")
+    console.log("non è un numero");
 }
+*/
+
+//Es 12:
+
+       /*score è la variabile di controllo*/
+/*switch (typeof score === "number") {    // type of andrà a verificare che il valore inserito nel prompt sia un numero
+    case (score >= 90 && score <= 100) :     //case è accompagnato dal valore della variabile di controllo 
+        console.log("voto ottimo");          // e dal codice che dovra essere eseguito se la variabile ha tale valore
+        break;                            // una volta trovata una corrispondenza  break salterà gli altri casi arrivando alla fine dello switch
+    case (score >= 70 && score <=89) :
+        console.log("voto buono");
+        break;
+    case (score >= 60 && score <=69) :
+        console.log("voto sufficiente");
+        break;
+    case (score <= 59 && score == 0) :
+        console.log("voto insufficiente");  
+        break;
+    default :                                   // valore che verrà eseguito quando non trova nessuna corrispondenza con i casi 
+        console.log("non è un numero");
+}
+*/
+//Es 13:
