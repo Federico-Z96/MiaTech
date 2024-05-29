@@ -61,9 +61,16 @@ console.log(arrDispari);
 
 //Es 7:
 
-let word = prompt("inserisci una parola"); 
+let word = prompt("inserisci una parola");      // prompt crea  una finestra di dialogo che richiede all'utente di inserire un valore.
 
 console.log(word);
 
 //Es 8:
 console.log(word.length);                  //per verificare la lunghezza della parola inserita dall'utente
+
+//Es 9:
+
+do {
+  word = prompt("RIPROVA inserendo una parola con più caratteri")    // .trim metodo per eliminare gli spazi all'inizio e alla fine
+}while(word.length < 5)
+    console.log(word.tr);
