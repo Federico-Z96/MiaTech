@@ -85,7 +85,7 @@ if( number > 5 ) {
 }
 
 //Es 11:
-let score = parseInt(prompt("inserisci numero"));
+//let score = parseInt(prompt("inserisci numero"));
 
 /*if(score >= 90 && score <= 100 ) {
     console.log("voto ottimo");
@@ -125,3 +125,12 @@ let score = parseInt(prompt("inserisci numero"));
 const arrayNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 console.log(arrayNumbers);
+
+//Es 14:
+
+let tot = 0;                                          //variabile a cui verrà successivamente il for attribuita la somma, si inizializza con valore 0
+for(let i = 0; i < arrayNumbers.length; i++) {        //parametro comprende una variabile che ciclera tutti gli elementi del nostro array grazie al .length
+    tot = tot + arrayNumbers[i];                      // una volta ciclato il numero verà quindi sommato al numero precedente fino alla fine del ciclo
+    
+}
+console.log(tot)
