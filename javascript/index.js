@@ -134,3 +134,10 @@ for(let i = 0; i < arrayNumbers.length; i++) {        //parametro comprende una 
     
 }
 console.log(tot)
+
+//Es 15:
+const arrReverse = [];
+for(let i = arrayNumbers.length-1; i >= 0 ; i--) {   // length-1 perchè dobbiamo lavorare con gli indici e length ci dirà quanti valori abbiamo nel nostro array
+    arrReverse.push(arrayNumbers[i]);                // dobbiamo pushare nel nostro nuovo array gli elementi contenuti in arrayNumbers 
+}
+console.log(arrReverse);
