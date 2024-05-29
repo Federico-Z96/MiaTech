@@ -58,3 +58,12 @@ while(ii >= 1){                         // dichiarazione condizione, il ciclo ve
     ii--;                               // incremento o decremento è sempre necessario per evitare un loop 
 }
 console.log(arrDispari);
+
+//Es 7:
+
+let word = prompt("inserisci una parola"); 
+
+console.log(word);
+
+//Es 8:
+console.log(word.length);                  //per verificare la lunghezza della parola inserita dall'utente
