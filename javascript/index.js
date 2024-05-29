@@ -121,3 +121,7 @@ let score = parseInt(prompt("inserisci numero"));
 }
 */
 //Es 13:
+
+const arrayNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+console.log(arrayNumbers);
