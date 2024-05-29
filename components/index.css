@@ -1,9 +1,0 @@
-@import url(./template/root.css);
-
-.full-size {
-  width: 100vw;
-  height: 100vh;
-  background-color: blueviolet;
-  text-align: center;
-  padding-top: 50vh;
-}
