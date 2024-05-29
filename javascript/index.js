@@ -133,7 +133,7 @@ for(let i = 0; i < arrayNumbers.length; i++) {        //parametro comprende una 
     tot = tot + arrayNumbers[i];                      // una volta ciclato il numero verà quindi sommato al numero precedente fino alla fine del ciclo
     
 }
-console.log(tot)
+console.log(tot);
 
 //Es 15:
 const arrReverse = [];
@@ -141,3 +141,23 @@ for(let i = arrayNumbers.length-1; i >= 0 ; i--) {   // length-1 perchè dobbiam
     arrReverse.push(arrayNumbers[i]);                // dobbiamo pushare nel nostro nuovo array gli elementi contenuti in arrayNumbers 
 }
 console.log(arrReverse);
+
+//Es 16:
+
+const parole = [];
+
+for (let i = 0; i < 5; i++){
+    let score2 =prompt("scrivi qui:");
+    parole.push(score2);
+};
+console.log("parole: ", parole);
+
+const paroleDispari = [];
+
+for (let i = 0; i < parole.length; i++ ){
+    if (i % 2 !== 0) {
+        paroleDispari.push(parole[i]);
+    }
+};
+
+console.log(paroleDispari);
