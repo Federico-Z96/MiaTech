@@ -26,3 +26,18 @@ let outside = 19;                               // non potra essere in alcun mod
     console.log(outside, inside);
 }
 console.log(outside,/*inside*/);   
+
+//Es 5:
+const arr1 = [];
+const arr2 = [];
+for (let i = 0; i <= 20; i++) {            // indentazione del ciclo per iterare si parte dal valore 0 per arrivare al valore 20 addizzionandolo ogni volta di 1
+    
+    if(i % 2 == 0){                        // if necessario per la verifica dei numeri, da filtrare e inserire successivamente nell'array solo i pari
+        arr1.push(i);
+    }else {                                //else determina la condizione in questo caso die numeri dispari inserendoli in un altro array
+        arr2.push(i);
+    }
+    
+
+}
+console.log("pari: " + arr1 , "dispari: " +  arr2);
