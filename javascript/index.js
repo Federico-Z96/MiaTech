@@ -69,12 +69,12 @@ console.log(arrDispari);
 //console.log(word.length);                  //per verificare la lunghezza della parola inserita dall'utente
 
 //Es 9:
-
-/*do {
-  word = prompt("RIPROVA inserendo una parola con più caratteri")    // .trim metodo per eliminare gli spazi all'inizio e alla fine
-}while(word.length < 5)
+let word ;
+do {
+ word = prompt("insericsci una parola").trim();    // .trim metodo per eliminare gli spazi all'inizio e alla fine
+}while(word.length <= 5)
     console.log(word);
-*/
+
 
 //Es 10:
 
@@ -161,3 +161,13 @@ for (let i = 0; i < parole.length; i++ ){
 };
 
 console.log(paroleDispari);
+
+//Es 17:
+
+const person = {
+    name: "franco",
+    age: "2",
+    city: "Campo Basso"
+};
+
+console.log(person);
