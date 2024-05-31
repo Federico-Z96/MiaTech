@@ -114,7 +114,7 @@ if(score >= 90 && score <= 100 ) {
     case (score >= 60 && score <=69) :
         console.log("voto sufficiente");
         break;
-    case (score <= 59 && score == 0) :
+    case (score <= 59 ) :
         console.log("voto insufficiente");  
         break;
     default :                                   // valore che verrà eseguito quando non trova nessuna corrispondenza con i casi 
