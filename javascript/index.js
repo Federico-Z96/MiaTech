@@ -86,7 +86,7 @@ if( number > 5 ) {
 }
 
 //Es 11:
-let score = parseInt(prompt("inserisci numero"));
+/*let score = parseInt(prompt("inserisci numero"));
 
 if(score >= 90 && score <= 100 ) {
     console.log("voto ottimo");
@@ -99,7 +99,7 @@ if(score >= 90 && score <= 100 ) {
 } else {
     console.log("non è un numero");
 }
-
+*/
 
 //Es 12:
 
@@ -167,8 +167,8 @@ console.log(paroleDispari);
 
 const person = {
     name: "franco",
-    age: "2",
+    age: "20",
     city: "Campo Basso"
 };
 
-console.log(person);
+console.log(person.age);
