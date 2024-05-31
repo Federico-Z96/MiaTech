@@ -178,3 +178,8 @@ console.log(person.age);
 person.age = 25;
 
 console.log(person.age);
+
+//Es 19: 
+person.job = "asfaltatore";
+
+console.log(person);
