@@ -49,6 +49,7 @@ for (let i = 0; i <= 20; i = i + 2) {                //raramente si usera addizi
 console.log(arr3);
 
 //Es 6:
+/* 
 let ii = 10 ;                           // while = iterazione che verrà interrotta appena sarà falsa la condizione
 const arrDispari = [];
 while(ii >= 1){                         // dichiarazione condizione, il ciclo verrà effettutato 
@@ -58,7 +59,7 @@ while(ii >= 1){                         // dichiarazione condizione, il ciclo ve
     ii--;                               // incremento o decremento è sempre necessario per evitare un loop 
 }
 console.log(arrDispari);
-
+*/
 //Es 7:
 
 //let word = prompt("inserisci una parola");      // prompt crea  una finestra di dialogo che richiede all'utente di inserire un valore.
@@ -69,12 +70,12 @@ console.log(arrDispari);
 //console.log(word.length);                  //per verificare la lunghezza della parola inserita dall'utente
 
 //Es 9:
-let word ;
+/*let word ;
 do {
  word = prompt("insericsci una parola").trim();    // .trim metodo per eliminare gli spazi all'inizio e alla fine
 }while(word.length <= 5)
     console.log(word);
-
+*/
 
 //Es 10:
 
@@ -85,20 +86,20 @@ if( number > 5 ) {
 }
 
 //Es 11:
-//let score = parseInt(prompt("inserisci numero"));
+let score = parseInt(prompt("inserisci numero"));
 
-/*if(score >= 90 && score <= 100 ) {
+if(score >= 90 && score <= 100 ) {
     console.log("voto ottimo");
 }else if( score >= 70 && score <=89) {
     console.log("voto buono");
 }else if( score >= 60 && score <=69){
     console.log("voto sufficiente");
-}else if(score <= 59 && score == 0) {
+}else if(score <= 59 ) {
     console.log("voto insufficiente");
 } else {
     console.log("non è un numero");
 }
-*/
+
 
 //Es 12:
 
@@ -144,7 +145,7 @@ console.log(arrReverse);
 
 //Es 16:
 
-const parole = [];
+/*const parole = [];
 
 for (let i = 0; i < 5; i++){
     let score2 =prompt("scrivi qui:");
@@ -161,7 +162,7 @@ for (let i = 0; i < parole.length; i++ ){
 };
 
 console.log(paroleDispari);
-
+*/
 //Es 17:
 
 const person = {
