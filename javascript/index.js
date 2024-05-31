@@ -172,3 +172,9 @@ const person = {
 };
 
 console.log(person.age);
+
+//Es 18:
+
+person.age = 25;
+
+console.log(person.age);
