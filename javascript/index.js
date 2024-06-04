@@ -186,8 +186,8 @@ console.log(person);
 
 //Es 20 (for in):
 
-for (let proprietà in person) {                              //per ogni proprieta in persona stampami un console log di nome della proprietà : valore della proprietà ---> che si attribuisce indicando il nome dell'oggetto su cui vogliamo che si esegua un iterazione
-    console.log(proprietà + " : " + person[proprietà]);
+for (let property in person) {                              //per ogni proprieta in persona stampami un console log di nome della proprietà : valore della proprietà ---> che si attribuisce indicando il nome dell'oggetto su cui vogliamo che si esegua un iterazione
+    console.log(property + " : " + person[property]);
 }
 
 //Es 21:
