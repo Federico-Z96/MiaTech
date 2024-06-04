@@ -171,7 +171,7 @@ const person = {
     city: "Campo Basso"
 };
 
-console.log(person.age);
+console.log(person);
 
 //Es 18:
 
@@ -190,3 +190,4 @@ for (let proprietà in person) {                              //per ogni proprie
     console.log(proprietà + " : " + person[proprietà]);
 }
 
+//Es 21:
