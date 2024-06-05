@@ -51,3 +51,7 @@ const student = {
 };
 
 console.log(Object.keys(student));
+
+//Es 25:
+
+console.log(Object.values(student));

@@ -145,7 +145,7 @@ console.log(arrReverse);
 
 //Es 16:
 
-/*const parole = [];
+const parole = [];
 
 for (let i = 0; i < 5; i++){
     let score2 =prompt("scrivi qui:");
@@ -156,13 +156,13 @@ console.log("parole: ", parole);
 const paroleDispari = [];
 
 for (let i = 0; i < parole.length; i++ ){
-    if (i % 2 !== 0) {
+    if (parole[i].length % 2 !== 0) {
         paroleDispari.push(parole[i]);
     }
 };
 
 console.log(paroleDispari);
-*/
+
 //Es 17:
 
 const person = {
