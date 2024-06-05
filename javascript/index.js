@@ -190,4 +190,4 @@ for (let property in person) {                              //per ogni proprieta
     console.log(property + " : " + person[property]);
 }
 
-//Es 21:
+
