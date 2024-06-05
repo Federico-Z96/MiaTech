@@ -57,3 +57,7 @@ console.log(Object.keys(student));
 
 console.log(Object.values(student));
 
+//Es 26:
+
+console.log(Object.entries(student));
+
