@@ -40,3 +40,14 @@ console.log(counter.increment());
 console.log(counter.increment());
 console.log(counter.increment());
 console.log(counter.decrement());
+
+//Es 24:
+
+const student = {
+    name : "franco",
+    age : 17,
+    grade : "superiori",
+    school : "scuola media"
+};
+
+console.log(Object.keys(student));
