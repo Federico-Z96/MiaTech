@@ -61,7 +61,7 @@ console.log(Object.values(student));
 
 console.log(Object.entries(student));
 
-//Es 27:
+//Es 27(forEach e .map):
 
 const numbers = [ 1, 2, 3, 4, 5 ];
 
@@ -72,3 +72,34 @@ numbers.forEach(numbers => {                   //forEach va a creare un iterazio
 const squaredNumbers = numbers.map(numbers => numbers * numbers);  // map va ad attribuire gli elementi di numbers al quadrato al nuovo array creato(squaredNumbers)
 
 console.log(squaredNumbers);
+
+//Es 28(filter & find): 
+
+const students = [
+    {
+        nome : "filippo",
+        grade : 76
+    },
+    {
+        nome : "maria",
+        grade : 50
+    },
+    {
+        nome : "giuseppe",
+        grade : 60
+    },
+    {
+        nome : "alessia",
+        grade : 59
+    }
+];
+
+console.log(students);
+
+const passedStudents = students.filter(students => students.grade >= 60 ); 
+
+console.log(passedStudents);
+
+const studentLowGrade = students.find(student => student.grade < 60);
+
+console.log(studentLowGrade);
