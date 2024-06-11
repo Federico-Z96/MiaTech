@@ -65,11 +65,15 @@ console.log(Object.entries(student));
 
 const numbers = [ 1, 2, 3, 4, 5 ];
 
-numbers.forEach(numbers => {                   //forEach va a creare un iterazione di tutti gli elementi di numers, andandoli a moltiplicare per 2 prima di vederli rappresentati in console
-    console.log(numbers * 2);
+numbers.forEach(number => {                   //forEach va a creare un iterazione di tutti gli elementi di numers, andandoli a moltiplicare per 2 prima di vederli rappresentati in console
+    console.log(number * 2);
 });
 
-const squaredNumbers = numbers.map(numbers => numbers * numbers);  // map va ad attribuire gli elementi di numbers al quadrato al nuovo array creato(squaredNumbers)
+/*for(let i = 0; i <= numbers.length; i++){
+    console.log(numbers[i] * 2)
+};*/
+
+const squaredNumbers = numbers.map(number => number * number);  // map va ad attribuire gli elementi di numbers al quadrato al nuovo array creato(squaredNumbers)
 
 console.log(squaredNumbers);
 
@@ -103,3 +107,17 @@ console.log(passedStudents);
 const studentLowGrade = students.find(student => student.grade < 60);
 
 console.log(studentLowGrade);
+
+//Es 29(reduce & sort):
+
+const exponses = [5, 15, 12, 7, 9];
+
+const exponsesSum = exponses.reduce((i, z) => i + z);
+
+console.log(exponsesSum);
+
+const parole = ["cereali", "banane", "cioccolato", "fagioli", "spinaci"];
+
+const paroleOrdinate = parole.sort();
+
+console.log(paroleOrdinate);
