@@ -63,6 +63,7 @@ console.log(Object.entries(student));
 
 //Es 27(forEach e .map):
 
+
 const numbers = [ 1, 2, 3, 4, 5 ];
 
 numbers.forEach(number => {                   //forEach va a creare un iterazione di tutti gli elementi di numers, andandoli a moltiplicare per 2 prima di vederli rappresentati in console
