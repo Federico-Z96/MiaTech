@@ -124,27 +124,40 @@ console.log(paroleOrdinate);
 
 
 //Es 30(class):
-
+//Es 31(add proprety):
 
 class Automobile {
     _marca;
     _modello;
     _anno;
+    _chilometraggio;
 
-    constructor(marca, modello, anno){
+    constructor(marca, modello, anno, chilometraggio){
         this._marca = marca;
         this._modello = modello;
         this._anno = anno;
+        this._chilometraggio = chilometraggio;
     }
 
     descrizione() {
         console.log(`L'automobile è di questa marca: ${this._marca}`) 
     }
+    aggiungiChilometri(km) {
+        this._chilometraggio += km;
+    }
+
+    mostraChilometraggio() {
+        return this._chilometraggio;
+    }
 }
 
-const auto = new Automobile("bnw", "x5", 2010);
+const auto = new Automobile("bnw", "x5", 2010, 25);
 
-console.log(auto.descrizione());
+auto.aggiungiChilometri(255);
+
+console.log(auto.mostraChilometraggio());
+
+
 
 
 
