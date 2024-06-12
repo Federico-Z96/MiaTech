@@ -121,3 +121,30 @@ const parole = ["cereali", "banane", "cioccolato", "fagioli", "spinaci"];
 const paroleOrdinate = parole.sort();
 
 console.log(paroleOrdinate);
+
+
+//Es 30(class):
+
+
+class Automobile {
+    _marca;
+    _modello;
+    _anno;
+
+    constructor(marca, modello, anno){
+        this._marca = marca;
+        this._modello = modello;
+        this._anno = anno;
+    }
+
+    descrizione() {
+        console.log(`L'automobile è di questa marca: ${this._marca}`) 
+    }
+}
+
+const auto = new Automobile("bnw", "x5", 2010);
+
+console.log(auto.descrizione());
+
+
+
