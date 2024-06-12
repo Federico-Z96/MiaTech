@@ -140,7 +140,7 @@ class Automobile {
     }
 
     descrizione() {
-        console.log(`L'automobile è di questa marca: ${this._marca}`) 
+       return `L'automobile è di questa marca: ${this._marca}` 
     }
     aggiungiChilometri(km) {
         this._chilometraggio += km;
@@ -157,7 +157,28 @@ auto.aggiungiChilometri(255);
 
 console.log(auto.mostraChilometraggio());
 
+//Es 32(sottoclasse):
 
+class Elettrica extends Automobile {
+    _autonomia;
+
+    constructor(marca, modello, anno, chilometraggio, autonomia){
+        super(marca, modello, anno, chilometraggio);
+        this._autonomia = autonomia;
+    }
+
+    descrizione() {
+       return `${super.descrizione()} ed ha un'autonomia di: ${this._autonomia}` 
+    }
+
+    ricarica(km) {
+        this._autonomia += km;
+    }
+}
+
+const autoElettrica = new Elettrica("tesla", "model s", 2020, 120, 30);
+autoElettrica.ricarica(100);
+console.log(autoElettrica.descrizione());
 
 
 
