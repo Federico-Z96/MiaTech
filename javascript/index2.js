@@ -154,12 +154,11 @@ class Automobile {
   #calcolaEta() {
     let anni = new Date().getFullYear();
     return anni - this._anno;
-  };
+  }
 
   mostraEta() {
-    return `L'automobile ha ${this.#calcolaEta()} anni.`
-}
-  
+    return `L'automobile ha ${this.#calcolaEta()} anni.`;
+  }
 }
 
 const auto = new Automobile("bnw", "x5", 2010, 25);
@@ -187,7 +186,7 @@ class Elettrica extends Automobile {
   }
 }
 
-const autoElettrica = new Elettrica("tesla", "model s", 2020, 120, 30);
+const autoElettrica = new Elettrica("tesla", "model s", 2020, 120000, 30);
 autoElettrica.ricarica(100);
 console.log(autoElettrica.descrizione());
 
@@ -206,4 +205,17 @@ console.log(auto.saluta());
 console.log(auto.mostraEta());
 console.log(autoElettrica.mostraEta());
 
+//Es 35(metodo protetto):
 
+Automobile.prototype._controllaChilometri = function () {
+  if (this._chilometraggio > 100000) {
+    return "Avviso: Il chilometraggio dell'automobile supera i 100,000 km!";
+  } else {
+    return "Il chilometraggio dell'automobile è sotto i 100,000 km.";
+  }
+};
+
+const autoElettrica2 = new Elettrica("tesla", "model s", 2020, 1200, 30);
+
+console.log(autoElettrica._controllaChilometri());
+console.log(autoElettrica2._controllaChilometri());
