@@ -130,12 +130,14 @@ class Automobile {
   _modello;
   _anno;
   _chilometraggio;
+  _contatoreChiamate = 0;
 
-  constructor(marca, modello, anno, chilometraggio) {
+  constructor(marca, modello, anno, chilometraggio, contatoreChiamate) {
     this._marca = marca;
     this._modello = modello;
     this._anno = anno;
     this._chilometraggio = chilometraggio;
+    this._contatoreChiamate = contatoreChiamate;
   }
 
   descrizione() {
@@ -170,6 +172,21 @@ class Automobile {
         return `Le AUTO HANNO GLI STESSI KM`
     }
   }
+ //Es 36(contatore):
+ 
+  #incrementaContatore() {
+    this._contatoreChiamate++
+  }
+  //Es 37:
+  aggiungiChilometri(km) {
+    this.#incrementaContatore(); 
+    this._chilometraggio += km;
+    return this;
+  }
+  //Es38
+  mostraContatoreChiamate() {
+    return `Il metodo aggiungiChilometri è stato chiamato ${this._contatoreChiamate} volte.`;
+}
 }
 
 const auto = new Automobile("bnw", "x5", 2010, 25);
@@ -233,6 +250,10 @@ console.log(autoElettrica2._controllaChilometri());
 
 //Es 36(confronta km):
 
-const automobile = new Automobile("audi", "modello", 2000, 12000);
+const automobile = new Automobile("audi", "modello", 2000, 12000, 0);
 
 console.log(Automobile.confrontaChilometraggio(auto, automobile));
+
+//Es 37:
+console.log(automobile.aggiungiChilometri(5000));
+console.log(automobile.mostraContatoreChiamate());
