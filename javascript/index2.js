@@ -159,6 +159,17 @@ class Automobile {
   mostraEta() {
     return `L'automobile ha ${this.#calcolaEta()} anni.`;
   }
+
+ //Es 34(metodo statico): 
+  static confrontaChilometraggio(auto1, auto2) {
+    if(auto1._chilometraggio > auto2._chilometraggio) {
+        return `l'auto con più km è ${auto1._modello}`   
+    } else if(auto1._chilometraggio < auto2._chilometraggio) {
+         return `l'auto con più km è ${auto2._modello}`
+    } else {
+        return `Le AUTO HANNO GLI STESSI KM`
+    }
+  }
 }
 
 const auto = new Automobile("bnw", "x5", 2010, 25);
@@ -219,3 +230,9 @@ const autoElettrica2 = new Elettrica("tesla", "model s", 2020, 1200, 30);
 
 console.log(autoElettrica._controllaChilometri());
 console.log(autoElettrica2._controllaChilometri());
+
+//Es 36(confronta km):
+
+const automobile = new Automobile("audi", "modello", 2000, 12000);
+
+console.log(Automobile.confrontaChilometraggio(auto, automobile));
