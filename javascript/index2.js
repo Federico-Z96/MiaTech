@@ -280,3 +280,11 @@ console.log(automobile.mostraContatoreChiamate());
 auto.chilometriAuto = 50000;
 console.log(auto.chilometriAuto);
 console.log(auto._chilometraggio);
+
+//Es 41(classe camion extend):
+
+class Camion extends Automobile {
+  constructor(marca, modello, anno, chilometraggio) {
+    super(marca, modello, anno, chilometraggio);
+  }
+};
