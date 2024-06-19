@@ -187,6 +187,12 @@ class Automobile {
   mostraContatoreChiamate() {
     return `Il metodo aggiungiChilometri è stato chiamato ${this._contatoreChiamate} volte.`;
 }
+//Es 39(getter):
+  get chilometriAuto() {
+    return `i km del veicolo sono: ${this._chilometraggio}`
+  }
+
+    
 }
 
 const auto = new Automobile("bnw", "x5", 2010, 25);
@@ -257,3 +263,11 @@ console.log(Automobile.confrontaChilometraggio(auto, automobile));
 //Es 37:
 console.log(automobile.aggiungiChilometri(5000));
 console.log(automobile.mostraContatoreChiamate());
+
+
+//Es 38(getter):
+ console.log(auto.chilometriAuto);
+
+
+
+
