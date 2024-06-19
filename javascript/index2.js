@@ -189,9 +189,15 @@ class Automobile {
 }
 //Es 39(getter):
   get chilometriAuto() {
-    return `i km del veicolo sono: ${this._chilometraggio}`
+    return this._chilometraggio;
   }
-
+//Es 40(setter):
+  set chilometriAuto(nuovoChilometraggio) {
+    
+    if(nuovoChilometraggio >= this._chilometraggio) {
+     return this._chilometraggio = nuovoChilometraggio;
+    } else {`il ${nuovoChilometraggio} è inferiore al valore attaule`}
+  }
     
 }
 
@@ -265,9 +271,12 @@ console.log(automobile.aggiungiChilometri(5000));
 console.log(automobile.mostraContatoreChiamate());
 
 
-//Es 38(getter):
+//Es 39(getter):
  console.log(auto.chilometriAuto);
 
 
+//Es 40(setter):
 
-
+auto.chilometriAuto = 50000;
+console.log(auto.chilometriAuto);
+console.log(auto._chilometraggio);
