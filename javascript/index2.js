@@ -282,9 +282,32 @@ console.log(auto.chilometriAuto);
 console.log(auto._chilometraggio);
 
 //Es 41(classe camion extend):
-
+//Es 42(aggiungi proprietà):
 class Camion extends Automobile {
-  constructor(marca, modello, anno, chilometraggio) {
+  _caricoMassimo;
+  _caricoAttuale;
+
+  constructor(marca, modello, anno, chilometraggio, caricoMassimo, caricoAttuale) {
     super(marca, modello, anno, chilometraggio);
+    this._caricoMassimo = caricoMassimo;
+    this._caricoAttuale = caricoAttuale;
   }
+
+  descrizione() {
+    return `il carico massimo è di ${this._caricoMassimo}kg`
+  }
+
+  carica(kg) {
+    this._caricoAttuale += kg;
+    return this;
+  }
+
 };
+
+let mioCamion = new Camion('Volvo', 'FH16',2012, 100000, 20000, 255);
+console.log(mioCamion.descrizione());
+
+//Es 42(aggiungi proprietà):
+console.log(mioCamion._caricoAttuale);
+mioCamion.carica(2000);
+console.log(mioCamion._caricoAttuale);
