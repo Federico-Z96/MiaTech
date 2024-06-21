@@ -22,7 +22,7 @@ console.log(numeroUno, numeroTre);
 
 const numeri = [10, 20, 30];
 
-// Destructuring con valori predefiniti
+// Destructuring con valori predefiniti, dando valore 0 avremmo stampate anche le altre variabili
 const [primoNumeroo , secondoNumeroo , terzoNumero , quartoNumero = 0, quintoNumero = 0] = numeri;
 
 // Stampa delle variabili nella console
@@ -31,3 +31,11 @@ console.log("Secondo numero:", secondoNumeroo);
 console.log("Terzo numero:", terzoNumero);
 console.log("Quarto numero:", quartoNumero);
 console.log("Quinto numero:", quintoNumero); 
+
+//Es 47(destructuring di un oggetto):
+
+let oggetto = {
+    titolo : "oggetto",
+    data : 1996
+};
+

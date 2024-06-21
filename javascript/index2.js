@@ -188,6 +188,7 @@ class Automobile {
     return `Il metodo aggiungiChilometri è stato chiamato ${this._contatoreChiamate} volte.`;
 }
 //Es 39(getter):
+
   get chilometriAuto() {
     return this._chilometraggio;
   }
