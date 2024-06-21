@@ -198,6 +198,14 @@ class Automobile {
      return this._chilometraggio = nuovoChilometraggio;
     } else {`il ${nuovoChilometraggio} è inferiore al valore attaule`}
   }
+  //Es 43(creazione metodo verificaIstanza):
+  static verificaIstanza(obj, classe) {
+    if(obj instanceof classe) {
+      alert(`la classe corrente è : ${classe.name}` );
+    } else {
+      alert(`oggetto non corrisponde alla classe ${classe.name}`);
+    }
+  }
     
 }
 
@@ -311,3 +319,16 @@ console.log(mioCamion.descrizione());
 console.log(mioCamion._caricoAttuale);
 mioCamion.carica(2000);
 console.log(mioCamion._caricoAttuale);
+
+//Es 43(creare un instanceof):
+
+console.log(auto instanceof Automobile);
+console.log(auto instanceof Camion);  
+
+console.log(mioCamion instanceof Camion); 
+console.log(mioCamion instanceof Automobile); 
+//verifica metdo verificaIstanza
+
+console.log(Automobile.verificaIstanza(mioCamion, Camion));        //essendo il metodo verificaIstanza presente nella classe padre Automobile, si richiama la classe Automobile per poter utilizzare la seguente funzione
+console.log(Automobile.verificaIstanza(auto, Camion));
+console.log(Automobile.verificaIstanza(autoElettrica, Automobile));
