@@ -306,8 +306,10 @@ class Camion extends Automobile {
   }
 
   carica(kg) {
-    this._caricoAttuale += kg;
+    if(caricoAttuale < caricoMassimo) {
+      this._caricoAttuale += kg;
     return this;
+    } else {`il carico attuale corrisponde o supera il carico massimo di ${this._caricoMassimo}`}    
   }
 
 };
@@ -332,3 +334,6 @@ console.log(mioCamion instanceof Automobile);
 console.log(Automobile.verificaIstanza(mioCamion, Camion));        //essendo il metodo verificaIstanza presente nella classe padre Automobile, si richiama la classe Automobile per poter utilizzare la seguente funzione
 console.log(Automobile.verificaIstanza(auto, Camion));
 console.log(Automobile.verificaIstanza(autoElettrica, Automobile));
+
+console.log(mioCamion.descrizione());
+
