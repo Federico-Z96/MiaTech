@@ -8,3 +8,9 @@ let secondoNumero = arrayDiNumeri[1];
 console.log(primoNumero);
 console.log(secondoNumero);
 
+
+
+//Es 45:
+
+let [numeroUno, , numeroTre] = arrayDiNumeri;
+console.log(numeroUno, numeroTre);
