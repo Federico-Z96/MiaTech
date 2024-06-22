@@ -35,7 +35,10 @@ console.log("Quinto numero:", quintoNumero);
 //Es 47(destructuring di un oggetto):
 
 let oggetto = {
-    titolo : "oggetto",
+    titolo : "oggetto per il destrutturing",
     data : 1996
 };
 
+let {titolo, data} = oggetto;
+console.log("il titolo è: " + titolo);
+console.log("la data è: " + data);
