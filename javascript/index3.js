@@ -39,13 +39,26 @@ let oggetto = {
     data : 1996
 };
 
-let {titolo, data} = oggetto;
-console.log("il titolo è: " + titolo);
+let {titol, data} = oggetto;
+console.log("il titolo è: " + titol);
 console.log("la data è: " + data);
 
 //Es 48(destructuring con nomi di variabili diversi):
 
-let {titolo: nome, data: anno} = oggetto;
+let {titol: nome, data: anno} = oggetto;
 
 console.log("il titolo è: " + nome);
 console.log("la data è: " + anno);
+
+//Es 49(destrutturing con valori predefiniti):
+
+let locandina = {
+    titolo: "ristarnte Tal dei Tali",
+    numeroTelefono: 322111888,
+    annoApertura: 1940,                                                              //in un oggetto s euna proprietà è senza valore restituirà undefined
+    descrizione: "Siamo un ristorante e siamo bravi"
+};
+
+let { titolo , numeroTelefono, annoApertura = 1946 , descrizione } = locandina;
+
+console.log(titolo + " chiamaci al " + numeroTelefono + ", siamo un'attività che soddisfa i clienti dal " + annoApertura + "; " + descrizione);
