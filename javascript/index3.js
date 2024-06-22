@@ -42,3 +42,10 @@ let oggetto = {
 let {titolo, data} = oggetto;
 console.log("il titolo è: " + titolo);
 console.log("la data è: " + data);
+
+//Es 48(destructuring con nomi di variabili diversi):
+
+let {titolo: nome, data: anno} = oggetto;
+
+console.log("il titolo è: " + nome);
+console.log("la data è: " + anno);
