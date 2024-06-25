@@ -78,3 +78,20 @@ copiaArrNum =[...arrNum, arrNum2];
 
 console.log(`primo array: ${arrNum}, secondo array: ${arrNum2}`);
 console.log(`somma degli array: ${copiaArrNum}`);
+
+//Es 52(spread operator copia di un oggetto):
+
+const scrivania = {
+    pc : "hp",
+    schermo : "samsung",
+    caricatore : "wireless",
+    penne : 5
+};
+console.log(`cos'avevo sulla scrivania ieri? ${Object.values(scrivania)}`);
+
+const scrivaniaOggi = {...scrivania, 
+    lampada : "ikea",
+    mouse : "asus"
+};
+
+console.log(`cos'ho oggi sulla scrivania? ${Object.values(scrivaniaOggi)}`);
