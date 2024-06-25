@@ -62,3 +62,11 @@ let locandina = {
 let { titolo , numeroTelefono, annoApertura = 1946 , descrizione } = locandina;
 
 console.log(titolo + " chiamaci al " + numeroTelefono + ", siamo un'attività che soddisfa i clienti dal " + annoApertura + "; " + descrizione);
+
+//Es 50():
+
+const arrNum = [1, 12, 21];
+const copiaArrNum = [...arrNum];
+
+console.log(`array di partenza ${arrNum}`);
+console.log(`array copiato ${copiaArrNum}`);
