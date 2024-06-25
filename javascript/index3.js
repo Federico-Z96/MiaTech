@@ -63,10 +63,18 @@ let { titolo , numeroTelefono, annoApertura = 1946 , descrizione } = locandina;
 
 console.log(titolo + " chiamaci al " + numeroTelefono + ", siamo un'attività che soddisfa i clienti dal " + annoApertura + "; " + descrizione);
 
-//Es 50():
+//Es 50(spread operator, copia array):
 
 const arrNum = [1, 12, 21];
-const copiaArrNum = [...arrNum];
+let copiaArrNum = [...arrNum];
 
 console.log(`array di partenza ${arrNum}`);
 console.log(`array copiato ${copiaArrNum}`);
+
+//Es 51(spread operator, unire due array):
+
+const arrNum2 = [3, 4, 34, 43];
+copiaArrNum =[...arrNum, arrNum2];
+
+console.log(`primo array: ${arrNum}, secondo array: ${arrNum2}`);
+console.log(`somma degli array: ${copiaArrNum}`);
