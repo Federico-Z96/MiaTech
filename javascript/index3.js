@@ -95,3 +95,15 @@ const scrivaniaOggi = {...scrivania,
 };
 
 console.log(`cos'ho oggi sulla scrivania? ${Object.values(scrivaniaOggi)}`);
+
+//Es 53(rest operator):
+
+function sommaRest(...valori ) { 
+    let sumRest = 0;
+   for(i = 0; i < valori.length; i++) {
+    sumRest += valori[i];
+   }
+    return sumRest;
+};
+
+console.log(sommaRest(1, 2, 23, 12));
