@@ -107,3 +107,10 @@ function sommaRest(...valori ) {
 };
 
 console.log(sommaRest(1, 2, 23, 12));
+
+//Es 54(rest operator destructuring array):
+
+const arrNum3 = [12, 122, 212, 42];
+let [uno, due, ...restantiNumeri] = arrNum3;
+
+console.log(`i primi due numeri sono ${uno} e ${due}, i restanti numeri sono: ${restantiNumeri}`);
