@@ -114,3 +114,16 @@ const arrNum3 = [12, 122, 212, 42];
 let [uno, due, ...restantiNumeri] = arrNum3;
 
 console.log(`i primi due numeri sono ${uno} e ${due}, i restanti numeri sono: ${restantiNumeri}`);
+
+//Es 55(rest operator e destrutturing su oggetto):
+
+const auto = {
+    marca : "fiat",
+    modello : "panda",
+    anno : 2020,
+    colore : "grigio antracite"
+};
+
+let {marca, modello, ...altreCaratteristiche} = auto;
+
+console.log(`la marca è: ${marca}, il modello è: ${modello} e le altre caratteristiche sono: ${Object.values(altreCaratteristiche)}`);
