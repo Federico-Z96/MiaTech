@@ -143,3 +143,18 @@ console.log(JSON.stringify(tazza));
 let jsonString = '{"colore" : "nero", "manico" : "ha il manico"}';
 
 console.log(JSON.parse(jsonString));
+
+//Es 57():
+
+let jsonArr = '[{"colore" : "nero", "manico" : "ha il manico"}, {"colore" : "rosso", "manico" : "non ha il manico"}]';
+
+let jsonVar = JSON.parse(jsonArr);
+
+const jsonObj = {
+    colore : "verde",
+    manico : "non c'è il manico"
+};
+
+jsonVar.push(jsonObj);
+
+console.log(JSON.stringify(jsonVar));
