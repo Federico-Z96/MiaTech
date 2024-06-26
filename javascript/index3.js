@@ -168,3 +168,18 @@ let result = `nome : ${strNome}, cognome: ${strCognome}`;
 
 document.write(result);
 
+//Es 59():
+
+let {colore, manico, termoresistente} = tazza;
+
+let circonferenza = 23;
+
+const nuovaTazza = `
+    colore : ${colore},
+    manico : ${manico},
+    termoresistente : ${termoresistente},
+    circonferenza : ${circonferenza}
+`;
+
+console.log(nuovaTazza);
+
