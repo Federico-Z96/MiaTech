@@ -128,7 +128,7 @@ let {marca, modello, ...altreCaratteristiche} = auto;
 
 console.log(`la marca è: ${marca}, il modello è: ${modello} e le altre caratteristiche sono: ${Object.values(altreCaratteristiche)}`);
 
-//Es 56(JSON):
+//Es 56(JSON.stringify):
 
 const tazza = {
     colore: "nero",
@@ -137,3 +137,9 @@ const tazza = {
 };
 
 console.log(JSON.stringify(tazza));
+
+//Es 57(JSON.parse):
+
+let jsonString = '{"colore" : "nero", "manico" : "ha il manico"}';
+
+console.log(JSON.parse(jsonString));
