@@ -158,3 +158,13 @@ const jsonObj = {
 jsonVar.push(jsonObj);
 
 console.log(JSON.stringify(jsonVar));
+
+//Es 58(template literals):
+
+let strNome = "nome";
+let strCognome = "cognome";
+
+let result = `nome : ${strNome}, cognome: ${strCognome}`;
+
+document.write(result);
+
