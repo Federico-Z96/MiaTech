@@ -127,3 +127,13 @@ const auto = {
 let {marca, modello, ...altreCaratteristiche} = auto;
 
 console.log(`la marca è: ${marca}, il modello è: ${modello} e le altre caratteristiche sono: ${Object.values(altreCaratteristiche)}`);
+
+//Es 56(JSON):
+
+const tazza = {
+    colore: "nero",
+    manico: "ha il manico",
+    termoresistente: "si"
+};
+
+console.log(JSON.stringify(tazza));
