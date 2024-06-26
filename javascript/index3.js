@@ -183,3 +183,18 @@ const nuovaTazza = `
 
 console.log(nuovaTazza);
 
+//Es 60():
+
+function formatPerson(persona) {
+    const nuovaPersona = `
+    nome : ${persona.nome},
+    cognome : ${persona.cognome}
+`;
+return nuovaPersona;
+}
+
+const persona = {
+    nome: "federico",
+    cognome: "zaccaria"
+};
+console.log(persona);
