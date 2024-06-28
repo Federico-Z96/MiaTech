@@ -198,3 +198,11 @@ const persona = {
     cognome: "zaccaria"
 };
 console.log(persona);
+
+//Es 61():
+
+let myNumber = 42;
+console.log(myNumber);
+
+let arrMyNumber = [1, 2, 3, 23];
+console.log(arrMyNumber);
