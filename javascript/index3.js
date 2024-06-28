@@ -231,3 +231,11 @@ const macchina = {
 console.group("gruppo console.");
 console.table(macchina);
 console.groupEnd();
+
+//Es 63() :
+
+const funzioneConsole = () => {
+    console.log("test setTimeout")
+};
+
+setTimeout(funzioneConsole, 3000);
