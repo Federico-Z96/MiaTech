@@ -220,3 +220,14 @@ const controllo = (x) => {
 }
 
 controllo([1, 3]);
+
+//Es 62(console methods):
+
+const macchina = {
+    marca : "audi",
+    anno : 2020
+};
+
+console.group("gruppo console.");
+console.table(macchina);
+console.groupEnd();
