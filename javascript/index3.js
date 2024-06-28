@@ -206,3 +206,17 @@ console.log(myNumber);
 
 let arrMyNumber = [1, 2, 3, 23];
 console.log(arrMyNumber);
+
+//Es 61(console methods):
+
+const controllo = (x) => {
+    if(typeof x === "number"){
+        console.error("non è una stringa")
+    }else if(typeof x ==="string") {
+        console.warn("ci siamo")
+    }else {
+        console.log("il dato ricevuto è corretto")
+    }
+}
+
+controllo([1, 3]);
