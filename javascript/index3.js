@@ -238,8 +238,18 @@ const funzioneConsole = () => {
     console.log("test setTimeout")
 };
 
-setTimeout(funzioneConsole, 3000);
+//setTimeout(funzioneConsole, 3000);
 
 //Es 64(setInterval);
 
-setInterval(funzioneConsole, 2000);
+//setInterval(funzioneConsole, 2000);
+
+//Es 65():
+
+let interval = setInterval(funzioneConsole, 1000);
+
+setTimeout(function () {
+    clearInterval(interval)
+}, 5000);
+
+
