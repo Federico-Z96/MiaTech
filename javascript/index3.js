@@ -252,4 +252,19 @@ setTimeout(function () {
     clearInterval(interval)
 }, 5000);
 
+//Es 66(try and catch):
+
+const tryECatch = (x, y) => {
+    try {
+        if(y == 0){
+            throw new Error("il divisore non può essere zero");
+        }
+        console.log(x / y);
+    } catch (error){
+        console.error(error.message);                 //message, per lanciare il messaggio di errore
+    }
+}
+
+tryECatch(5, 0);
+
 
