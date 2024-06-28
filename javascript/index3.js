@@ -239,3 +239,7 @@ const funzioneConsole = () => {
 };
 
 setTimeout(funzioneConsole, 3000);
+
+//Es 64(setInterval);
+
+setInterval(funzioneConsole, 2000);
