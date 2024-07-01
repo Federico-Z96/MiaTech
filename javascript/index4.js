@@ -21,4 +21,4 @@ const tryCatch = (minore, maggiore) => {
 }
 
 
-tryCatch(5, 10);
+tryCatch("", 10);
