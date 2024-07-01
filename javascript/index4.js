@@ -22,3 +22,24 @@ const tryCatch = (minore, maggiore) => {
 
 
 tryCatch("", 10);
+
+//Es 68(try & catch with finally):
+
+const finallyTest = (alpha, beta) => {
+    try{
+        if(typeof alpha !== "number" || typeof beta !== "number") {
+            throw new Error("dato inserito non valido");
+        }else {
+            if(alpha < beta || alpha === beta) {
+               throw new Error("operazione non valida : alpha è minore o uguale a beta"); 
+            }
+            
+        }
+    } catch (error) {
+        console.error(error.message);
+    } finally{
+        alert("Errore  Errore  Errore");
+    }
+};
+
+finallyTest(4, 5);
