@@ -5,7 +5,7 @@
 const tryCatch = (minore, maggiore) => {
     try {
         if (typeof minore !== 'number' || typeof maggiore !== 'number') {          
-            throw new TypeError("Entrambi i valori devono essere numeri.");       //TypeError perché stiamo verificando se i valori passati sono del tipo corretto (numeri).
+            throw new TypeError("Entrambi i valori devono essere numeri.");       //TypeError perché si stà verificando se i valori passati sono del tipo corretto (numeri).
         }
 
         if (minore < maggiore) {
