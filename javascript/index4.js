@@ -264,13 +264,15 @@ const chainpromise = () =>{
 chainpromise()
 .then((valore) => {
     console.log("successo!!!", valore);
-    return chainpromise;
+    return chainpromise();
 })
 .then((valreRandom) => {
     console.log("successo nella seconda promessa!!!", valreRandom);
+    return chainpromise();
 })
 .then((ultimoValore) => {
     console.log("successo nella terza promessa!!!", ultimoValore);
+    return chainpromise();
 })
 .catch((errore) => {
     console.error("ERROREE!!!", errore);
