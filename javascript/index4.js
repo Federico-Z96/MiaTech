@@ -89,6 +89,18 @@ const verifica = (a, b, callback) => {
 
 callbackAnnidate(1, 5, verifica);
 
+//Es 72(promises):
+
+const promessaSemplice = () => {
+    return new Promise((resolve, reject) => {
+       setTimeout(() =>{
+        resolve("promessa mantenuta dopo 2 secondi")}, 2000)
+    })
+};
+
+promessaSemplice().then((message) => {
+    console.log(message);
+});
 
 
  
