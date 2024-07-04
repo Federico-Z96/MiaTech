@@ -176,7 +176,7 @@ functionNumber()
 
 //Es 77(catena di promises con gestione di errori):
 
-const randomValue = () => {
+/*const randomValue = () => {
     return new Promise((resolve, reject) => {
         let numero = Math.floor(Math.random() * 100);
         let numeroDue = parseInt(prompt("inserisci un numero: ")); 
@@ -202,6 +202,27 @@ randomValue()
 .then((risultatob) => {
     let risultato = risultatob  * 2;
     console.log(risultato);
+})
+.catch((error) => {
+    console.error(error);
+}); */
+
+//Es 78(gestione degli errori con catch):
+
+const promessaError = () => {
+    return new Promise((resolve, reject) => {
+        let errore = Boolean(Math.random() * 2 >= 1);
+        if (errore === true) {
+            reject("Si è verificato un errore")
+        } else {
+            resolve("operazione completata con successo");
+        }
+    })
+};
+
+promessaError()
+.then((errore) => {
+    console.log(errore);
 })
 .catch((error) => {
     console.error(error);
