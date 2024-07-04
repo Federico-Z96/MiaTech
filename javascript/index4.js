@@ -247,3 +247,31 @@ promessaBoolean(true)
 .catch((errore) => {
     console.error(`Errore!!! : ${errore}`);
 });
+
+//Es 80 (gestione errori in una catena di promesse):
+
+const chainpromise = () =>{
+    return new Promise((resolve, reject) => {
+        let valore = Math.floor(Math.random() * 100)
+        if(valore >= 0.5) {
+            resolve(`il risultato è ${valore}`)
+        }else {
+            resolve(`riprova il risultato è falso`)
+        }
+    })
+};
+
+chainpromise()
+.then((valore) => {
+    console.log("successo!!!", valore);
+    return chainpromise;
+})
+.then((valreRandom) => {
+    console.log("successo nella seconda promessa!!!", valreRandom);
+})
+.then((ultimoValore) => {
+    console.log("successo nella terza promessa!!!", ultimoValore);
+})
+.catch((errore) => {
+    console.error("ERROREE!!!", errore);
+});
