@@ -91,7 +91,7 @@ callbackAnnidate(1, 5, verifica);
 
 //Es 72(promises):
 
-const promessaSemplice = () => {
+/*const promessaSemplice = () => {
     return new Promise((resolve, reject) => {
        setTimeout(() =>{
         resolve("promessa mantenuta dopo 2 secondi")}, 2000)
@@ -100,7 +100,26 @@ const promessaSemplice = () => {
 
 promessaSemplice().then((message) => {
     console.log(message);
-});
+});*/
 
+//Es 73(promise con catch):
+
+const promessaSemplice = () => {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+        if (false) {
+        resolve("promessa mantenuta dopo 2 secondi")
+        } else {
+            reject("promessa non mantenuta ")
+        }}, 2000)
+    })
+};
+
+promessaSemplice().then((message) => {
+    console.log(message);
+})
+.catch((error) => {
+    console.error(error)
+});
 
  
