@@ -71,4 +71,24 @@ finallyTest(4, 5);*/
  }
 
 functionSum(summ);
+
+//Es 71(calback annidate):
+
+const callbackAnnidate = (a, b, callback) => {
+    if(typeof a === "number" && typeof b ==="number"){
+        callback(a, b, (result) => {
+            console.log(result);
+        });
+    }
+};
+
+const verifica = (a, b, callback) => {
+    const result = a + b;
+    callback(`il risultato è ${result}`); 
+};
+
+callbackAnnidate(1, 5, verifica);
+
+
+
  
