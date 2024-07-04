@@ -128,7 +128,7 @@ promessaSemplice().then((message) => {
 
 //Es 75 (catena di promise):
 
-const functionNumber = () => {
+/*const functionNumber = () => {
     return new Promise ((resolve) => {
         setTimeout(() =>{
             numeroRandom =Math.floor(Math.random() * 100);
@@ -148,6 +148,28 @@ functionNumber()
 })
 .then((risultatoFinale) => {
     console.log(`il risultato finale è: ${risultatoFinale}`);
-});
+});*/
 
- 
+//Es 76 (catena di promise con condizioni): 
+
+const functionNumber = () => {
+    return new Promise ((resolve) => {
+        setTimeout(() =>{
+            numeroRandom =Math.floor(Math.random() * 100);
+            resolve(numeroRandom); 
+    }, 1000);
+});
+};
+
+functionNumber()
+.then((numero) => {
+    console.log(`numero iniziale: ${numero}`);
+    if(numero % 2 === 0) {
+        return numero * 2;
+    } else {
+        return numero + 1;
+    }
+})
+.then((numeroIdentificato) => {
+    console.log(`il risultato è: ${numeroIdentificato}`);
+});
