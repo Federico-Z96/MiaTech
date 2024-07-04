@@ -58,4 +58,17 @@ finallyTest(4, 5);*/
 
  functionCallback(1, 2, callbackTest);
 
+ //Es 70(callback con parametro):
+
+ const functionSum = (callback) => {
+    const result = 5 + 3;
+
+    callback(`il risultato è ${result}`); 
+ };
+
+ const summ = (result) => {
+    console.log(result);
+ }
+
+functionSum(summ);
  
