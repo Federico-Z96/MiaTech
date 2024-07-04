@@ -2,7 +2,7 @@
 //Es 67(try and catch):
 
 
-const tryCatch = (minore, maggiore) => {
+/*const tryCatch = (minore, maggiore) => {
     try {
         if (typeof minore !== 'number' || typeof maggiore !== 'number') {          
             throw new TypeError("Entrambi i valori devono essere numeri.");       //TypeError perché si stà verificando se i valori passati sono del tipo corretto (numeri).
@@ -21,7 +21,7 @@ const tryCatch = (minore, maggiore) => {
 }
 
 
-tryCatch("", 10);
+tryCatch("", 10);*/
 
 //Es 68(try & catch with finally):
 
@@ -103,7 +103,7 @@ promessaSemplice().then((message) => {
 });*/
 
 //Es 73(promise con catch):
-
+/* 
 const promessaSemplice = () => {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
@@ -124,7 +124,7 @@ promessaSemplice().then((message) => {
 //Es 74(promise with finally):
 .finally(() => {
     console.log("azione eseguita indipendentemente dal risultato");
-});
+});*/
 
 //Es 75 (catena di promise):
 
@@ -152,10 +152,10 @@ functionNumber()
 
 //Es 76 (catena di promise con condizioni): 
 
-const functionNumber = () => {
+/*const functionNumber = () => {
     return new Promise ((resolve) => {
         setTimeout(() =>{
-            numeroRandom =Math.floor(Math.random() * 100);
+            numeroRandom = Math.floor(Math.random() * 100);
             resolve(numeroRandom); 
     }, 1000);
 });
@@ -172,4 +172,37 @@ functionNumber()
 })
 .then((numeroIdentificato) => {
     console.log(`il risultato è: ${numeroIdentificato}`);
+});*/
+
+//Es 77(catena di promises con gestione di errori):
+
+const randomValue = () => {
+    return new Promise((resolve, reject) => {
+        let numero = Math.floor(Math.random() * 100);
+        let numeroDue = parseInt(prompt("inserisci un numero: ")); 
+        let arrNumber = [numero, numeroDue];
+        if(!isNaN(numeroDue)) {
+            console.log(`i numeri sono: ${numero} e ${numeroDue}`);
+            resolve(arrNumber);
+        } else {
+            reject("il valore inserito non è un numero");
+        }
+    })
+}
+
+randomValue()
+.then((risultato) => {
+     let risultatoSomma = 0;
+    for(i = 0; i < risultato.length; i++) {
+        risultatoSomma += risultato[i];
+    }
+    console.log(`il risultato è : ${risultatoSomma}`);
+    return(risultatoSomma);
+})
+.then((risultatob) => {
+    let risultato = risultatob  * 2;
+    console.log(risultato);
+})
+.catch((error) => {
+    console.error(error);
 });
