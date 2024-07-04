@@ -25,7 +25,7 @@ tryCatch("", 10);
 
 //Es 68(try & catch with finally):
 
-const finallyTest = (alpha, beta) => {
+/*const finallyTest = (alpha, beta) => {
     try{
         if(typeof alpha !== "number" || typeof beta !== "number") {
             throw new Error("dato inserito non valido");
@@ -42,4 +42,20 @@ const finallyTest = (alpha, beta) => {
     }
 };
 
-finallyTest(4, 5);
+finallyTest(4, 5);*/
+
+//Es 69(callback):
+ const functionCallback = (a, b, callback) => {
+    const result = a + b;
+
+    console.log(`il risultato è ${result}`);
+    callback(result); 
+ };
+
+ const callbackTest = (result) => {
+    console.log("Callback eseguito con il risultato:", result);  
+ };
+
+ functionCallback(1, 2, callbackTest);
+
+ 
