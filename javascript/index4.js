@@ -227,3 +227,23 @@ promessaError()
 .catch((error) => {
     console.error(error);
 });
+
+//Es 79(gestione errori con then e catch):
+
+const promessaBoolean = (valoreB) => {
+    return new Promise((resolve, reject) => {
+        if(valoreB) {
+            resolve("il valore è true");
+        }else {
+            reject("il valore è falso!!")
+        }
+    })
+};
+
+promessaBoolean(true)
+.then((value) => {
+    console.log(`Ottimooo!!! ${value}`);
+})
+.catch((errore) => {
+    console.error(`Errore!!! : ${errore}`);
+});
