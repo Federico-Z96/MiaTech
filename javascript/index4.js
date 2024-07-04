@@ -256,7 +256,7 @@ const chainpromise = () =>{
         if(valore >= 0.5) {
             resolve(`il risultato è ${valore}`)
         }else {
-            resolve(`riprova il risultato è falso`)
+            reject(`riprova il risultato è falso`)
         }
     })
 };
@@ -276,3 +276,58 @@ chainpromise()
 .catch((errore) => {
     console.error("ERROREE!!!", errore);
 });
+
+//Es 81(promise.all):
+
+const isANumber = () =>{
+    return new Promise((resolve, reject) => {
+        let numero = Math.floor(Math.random() * 100);
+          setTimeout(() => {
+            if(typeof numero === "number") {
+          
+                resolve("Promessa Uno risolta dopo 2 secondi");
+            } else {
+                reject("promessa uno non risolta")
+            }
+        }, 2000);
+    })
+};
+isANumber()
+.then((valore) => {
+    console.log(valore);
+})
+.catch((errore) => {
+    console.error(errore);
+}); 
+
+const promessaDue = () => {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve("Promessa Due risolta dopo 3 secondi");
+        }, 3000);
+    });
+};
+
+promessaDue()
+.then((valore) => {
+    console.log(valore);
+})
+.catch((errore) => {
+    console.error(errore);
+}); 
+
+Promise.all([isANumber(), promessaDue()])
+.then((values) => {
+    console.log(`tutte le promesse sono state risolte... la prima : ${values[0]} e la seconda${values[1]}`);
+})
+.catch((error) => {
+    console.error("Errore:", error);
+});
+
+
+
+
+
+
+
+
