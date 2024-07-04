@@ -111,7 +111,7 @@ const promessaSemplice = () => {
         resolve("promessa mantenuta dopo 2 secondi")
         } else {
             reject("promessa non mantenuta ")
-        }}, 2000)
+        } }, 2000)
     })
 };
 
@@ -120,6 +120,13 @@ promessaSemplice().then((message) => {
 })
 .catch((error) => {
     console.error(error)
+})
+//Es 74(promise with finally):
+.finally(() => {
+    console.log("azione eseguita indipendentemente dal risultato");
 });
+
+
+
 
  
