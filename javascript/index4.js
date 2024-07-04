@@ -272,7 +272,6 @@ chainpromise()
 })
 .then((ultimoValore) => {
     console.log("successo nella terza promessa!!!", ultimoValore);
-    return chainpromise();
 })
 .catch((errore) => {
     console.error("ERROREE!!!", errore);
