@@ -126,7 +126,28 @@ promessaSemplice().then((message) => {
     console.log("azione eseguita indipendentemente dal risultato");
 });
 
+//Es 75 (catena di promise):
 
+const functionNumber = () => {
+    return new Promise ((resolve) => {
+        setTimeout(() =>{
+            numeroRandom =Math.floor(Math.random() * 100);
+            resolve(numeroRandom); 
+    }, 1000);
+});
+};
 
+functionNumber()
+.then((number) => {
+    console.log(`numero iniziale: ${number}`);
+    return number * 2;
+})
+.then((numberMoltiplicato) => {
+    console.log(`il numero moltiplicato è: ${numberMoltiplicato}`);
+    return numberMoltiplicato + 3;
+})
+.then((risultatoFinale) => {
+    console.log(`il risultato finale è: ${risultatoFinale}`);
+});
 
  
