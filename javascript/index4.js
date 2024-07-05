@@ -120,11 +120,29 @@ promessaSemplice().then((message) => {
 })
 .catch((error) => {
     console.error(error)
-})
+});*/
 //Es 74(promise with finally):
+const promessaSemplice = () => {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+        if (false) {
+        resolve("promessa mantenuta dopo 2 secondi")
+        } else {
+            reject("promessa non mantenuta ")
+        } }, 2000)
+    })
+};
+
+promessaSemplice()
+.then((message) => {
+    console.log(message);
+})
+.catch((error) => {
+    console.error(error)
+})
 .finally(() => {
     console.log("azione eseguita indipendentemente dal risultato");
-});*/
+});
 
 //Es 75 (catena di promise):
 
@@ -326,7 +344,7 @@ Promise.all([isANumber(), promessaDue()])
 
 //Es 82(promise.race):
 
-const funRace = () => {
+/*const funRace = () => {
     return new Promise((resolve, reject) => {
         let a = Math.floor(Math.random() * 100);
         setTimeout(() =>{
@@ -361,6 +379,10 @@ Promise.race([funRace(), funRaceDue()])
     })
     .catch((error) => {
         console.error("Errore:", error);
-    });
+    });*/ 
+
+    //Es 83(promise.allSettled):
+
+    
 
     
