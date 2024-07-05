@@ -279,7 +279,7 @@ chainpromise()
 
 //Es 81(promise.all):
 
-const isANumber = () =>{
+/*const isANumber = () =>{
     return new Promise((resolve, reject) => {
         let numero = Math.floor(Math.random() * 100);
           setTimeout(() => {
@@ -322,12 +322,45 @@ Promise.all([isANumber(), promessaDue()])
 })
 .catch((error) => {
     console.error("Errore:", error);
-});
+});*/
 
+//Es 82(promise.race):
 
+const funRace = () => {
+    return new Promise((resolve, reject) => {
+        let a = Math.floor(Math.random() * 100);
+        setTimeout(() =>{
+        if(!isNaN(a)) {
+            
+            console.log(`${a} è un numero`);
+            resolve(a)
+        }else {
+            reject(`Ritenta!!! ${a} non è un numero`)
+        }
+    }, 2000);
+    })
+};
 
+const funRaceDue = () => {
+    return new Promise((resolve, reject) => {
+        let b = parseInt(prompt("inserire un numero :"))
+        setTimeout(() => {
+            if(!isNaN(b)) {
+                console.log(`${b} è un numero`);
+            resolve(b)
+            }else {
+                reject(`Ritenta!!! ${b} non è un numero`)
+            }
+        }, 3000)
+    })
+}
 
+Promise.race([funRace(), funRaceDue()])
+    .then((valore) => {
+        console.log("La prima promessa risolta è:", valore);
+    })
+    .catch((error) => {
+        console.error("Errore:", error);
+    });
 
-
-
-
+    
