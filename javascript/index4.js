@@ -383,6 +383,62 @@ Promise.race([funRace(), funRaceDue()])
 
     //Es 83(promise.allSettled):
 
+    const funUno = () => {
+        return new Promise((resolve, reject) => {
+            let a = Math.floor(Math.random() * 100);
+            setTimeout(() =>{
+            if(!isNaN(a)) {
+                
+                console.log(`${a} è un numero`);
+                resolve(a)
+            }else {
+                reject(`Ritenta!!! ${a} non è un numero`)
+            }
+        }, 2000);
+        })
+    };
     
+    const funDue = () => {
+        return new Promise((resolve, reject) => {
+            let b = parseInt(prompt("inserire un numero :"))
+            setTimeout(() => {
+                if(!isNaN(b)) {
+                    console.log(`${b} è un numero`);
+                resolve(b)
+                }else {
+                    reject(`Ritenta!!! ${b} non è un numero`)
+                }
+            }, 3000)
+        })
+    };
+
+    const funTre = () => {
+        return new Promise((resolve, reject) => {
+            let c = prompt("inserire una parola");
+            setTimeout(() => {
+                if(typeof c === "string") {
+                    console.log(`${c} è una stringa`);
+                    resolve(c)
+                }else {
+                    reject(`${c} non è una stringa, riprova!!`)
+                }
+            })
+        })
+    };
+    
+    Promise.allSettled([funUno(), funDue(), funTre()])
+    .then((results) => {
+        console.log("Tutte le promesse sono state completate:");
+        results.forEach((result, index) => {
+            if (result.status === "fulfilled") {
+                console.log(`Promessa ${index + 1} risolta:`, result.value);
+            } else {
+                console.log(`Promessa ${index + 1} rifiutata:`, result.reason);
+            }
+        });
+    })
+    .catch((error) => {
+        console.error("Errore:", error);
+    });
 
     
