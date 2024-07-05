@@ -383,7 +383,7 @@ Promise.race([funRace(), funRaceDue()])
 
     //Es 83(promise.allSettled):
 
-    const funUno = () => {
+    /* const funUno = () => {
         return new Promise((resolve, reject) => {
             let a = Math.floor(Math.random() * 100);
             setTimeout(() =>{
@@ -439,6 +439,9 @@ Promise.race([funRace(), funRaceDue()])
     })
     .catch((error) => {
         console.error("Errore:", error);
-    });
+    });*/
+
+
+
 
     
