@@ -125,3 +125,23 @@ fetch("https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=Cocktail")
    };
 
    fetchFun();
+
+   //Es 90(CORS):
+
+   const fetchData = async () => {
+    try {
+        const response = await fetch('https://api.github.com/users/octocat');
+
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
+        const data = await response.json();
+        console.log('Dati ricevuti:', data);
+    } catch (error) {
+        console.error('Si è verificato un errore durante la richiesta:', error.message);
+    }
+};
+
+fetchData();
+   
