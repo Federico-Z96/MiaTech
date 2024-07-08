@@ -75,3 +75,20 @@ const funRichiamo = async (a) => {
 funRichiamo(30);
 funRichiamo("a");
 funRichiamo(51);
+
+//Es 87(fetch):
+fetch("https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=Cocktail")
+   .then(response => {
+      return response.json();
+   })
+   .then(data => {
+      // Estrae e stampa i nomi dei cocktail
+      const cocktailNames = data.drinks.map(drink => drink.strDrink);
+      console.log(cocktailNames);
+
+      const cocktailList = document.querySelector("span");
+      cocktailList.textContent = cocktailNames.join(", ")
+   })
+   .catch(error => console.log("Si è verificato un errore!", error));
+
+ 
