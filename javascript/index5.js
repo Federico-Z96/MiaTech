@@ -91,4 +91,20 @@ fetch("https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=Cocktail")
    })
    .catch(error => console.log("Si è verificato un errore!", error));
 
+   //Es 88(fetch richiesta post):
+
+   const funPost = () => {
+    fetch("https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=Cocktail", {
+        method : "POST",
+        body : JSON.stringify({
+            nome : "Giovanni",
+            cognome : "giussani"
+        })
+    })
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch((error) => console.error('Errore:', error));
+   }
+
+   funPost();
  
