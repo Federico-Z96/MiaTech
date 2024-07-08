@@ -107,4 +107,21 @@ fetch("https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=Cocktail")
    }
 
    funPost();
+
+   //Es 89(fetch con gestione errori):
  
+   const fetchFun = async () => {
+    try {
+        const api = await fetch("https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=Cocktail");
+        if(!api.ok) {
+            throw new Error(`ERRORE!!! ${api.status}`);
+        }
+
+        const data = await api.json();
+        console.log('Dati ricevuti:', data);
+    }catch (error) {
+        console.error('Si è verificato un errore durante la richiesta:', error.message);
+    }
+   };
+
+   fetchFun();
