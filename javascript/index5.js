@@ -144,4 +144,25 @@ fetch("https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=Cocktail")
 };
 
 fetchData();
-   
+
+// Es 91(bypassare i CORS):
+
+const fetchData2 = async () => {
+        const apiProxy = "https://cors-anywhere.herokuapp.com/";
+        const response = "https://api.github.com/users/octocat";
+    try {
+        
+        const responses = await fetch(apiProxy + response);
+
+        if (!responses.ok) {
+            throw new Error(`HTTP error! status: ${responses.status}`);
+        }
+    
+        const data = await responses.json();
+        console.log('Dati ricevuti:', data);
+    } catch (error) {
+        console.error('Si è verificato un errore durante la richiesta:', error.message);
+    }
+};
+
+fetchData2();
