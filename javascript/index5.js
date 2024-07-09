@@ -166,3 +166,22 @@ const fetchData2 = async () => {
 };
 
 fetchData2();
+
+//Es 92 (API che supporta CORS):
+
+const fetchData3 = async () => {
+    try {
+        const response = await fetch('https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=Cocktail');
+
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
+        const data = await response.json();
+        console.log('Dati ricevuti:', data);
+    } catch (error) {
+        console.error('Si è verificato un errore durante la richiesta:', error.message);
+    }
+};
+
+fetchData3();
