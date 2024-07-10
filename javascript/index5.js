@@ -227,4 +227,31 @@ function recuperaCookie(nome) {
 
   rimuoviCookie("federico");
 
-  
+//Es 94(local storage):
+
+const bottonePizza = document.getElementById("bottone-pizza");
+const rimuoviPizza = document.getElementById("rimuovi-pizza");
+const recuperaPizza = document.getElementById("recupera-pizza");
+const paragrafoPizza = document.getElementById("pizza");
+
+const nomePizza = localStorage.getItem("my_preferred_pizza") || "";
+paragrafoPizza.innerText = nomePizza;
+console.log(`Recuperato all'avvio: ${nomePizza}`);
+
+bottonePizza.addEventListener("click", function() {
+    const nomePizza = prompt("qual'è la tua pizza preferita?", "nome pizza");
+    localStorage.setItem("my_preferred_pizza", nomePizza);
+    paragrafoPizza.innerText = nomePizza
+});
+
+rimuoviPizza.addEventListener("click", function() {
+    localStorage.removeItem("my_preferred_pizza");
+    paragrafoPizza.innerText = "";
+    console.log("Pizza preferita rimossa");
+});
+
+recuperaPizza.addEventListener("click", function() {
+    const nomePizza = localStorage.getItem("my_preferred_pizza") || "Nessuna pizza salvata";
+    paragrafoPizza.innerText = nomePizza;
+    console.log(`Recuperato: ${nomePizza}`);
+});
