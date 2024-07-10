@@ -7,6 +7,11 @@ console.log("il DOM è: ", document);
 const headerElement = document.getElementById('header');
 console.log('Elemento selezionato tramite getElementById:', headerElement);
 
-
+//Es 99(querryselector):
 const headerSelector = document.querySelector("#header");
 console.log(`L'elemento selezionato tramite querrySelector è : `, headerSelector);
+
+//Es 100(innerText):
+
+const inner = document.getElementById("innerText");
+inner.innerText = "testo sostituito correttamente";
