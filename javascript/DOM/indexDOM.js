@@ -6,3 +6,7 @@ console.log("il DOM è: ", document);
 
 const headerElement = document.getElementById('header');
 console.log('Elemento selezionato tramite getElementById:', headerElement);
+
+
+const headerSelector = document.querySelector("#header");
+console.log(`L'elemento selezionato tramite querrySelector è : `, headerSelector);
