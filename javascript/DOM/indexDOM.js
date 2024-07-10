@@ -31,3 +31,12 @@ par.innerHTML += "<button>Click here</button>";
 //Es 103(createElement):
 
 let list = document.createElement("ul");
+
+for(let i = 1; i <= 5; i++) {
+    let li = document.createElement("li");
+    li.textContent = i;
+
+    list.appendChild(li);
+};
+
+document.body.appendChild(list);
