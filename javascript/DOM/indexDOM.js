@@ -28,3 +28,6 @@ p.style.fontSize = "25px";
 let par = document.getElementById("testo");
 par.innerHTML += "<button>Click here</button>";
 
+//Es 103(createElement):
+
+let list = document.createElement("ul");
