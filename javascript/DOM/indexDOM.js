@@ -26,5 +26,5 @@ p.style.fontSize = "25px";
 
 
 let par = document.getElementById("testo");
-par.innerHTML = "<button>Click here</button>";
+par.innerHTML += "<button>Click here</button>";
 
