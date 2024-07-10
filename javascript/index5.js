@@ -110,7 +110,7 @@ fetch("https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=Cocktail")
 
    //Es 89(fetch con gestione errori):
  
-   const fetchFun = async () => {
+   /*const fetchFun = async () => {
     try {
         const api = await fetch("https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=Cocktail");
         if(!api.ok) {
@@ -184,4 +184,47 @@ const fetchData3 = async () => {
     }
 };
 
-fetchData3();
+fetchData3();*/
+ 
+//Es 93(cookies):
+
+const salvaCookies = (nome, valore, giorniScadenza) => {
+    let scadenza = '';
+  if (giorniScadenza) {
+    let dataScadenza = new Date();
+    dataScadenza.setTime(dataScadenza.getTime() + (giorniScadenza * 24 * 60 * 60 * 1000));
+    scadenza = "; expires=" + dataScadenza.toUTCString();
+  }
+    document.cookie = nome + "=" + encodeURIComponent(valore) + scadenza + "; path=/";
+};
+
+salvaCookies("federico", "20", 11);
+
+function recuperaCookie(nome) {
+    let nomeEQ = nome + "=";
+    let cookies = document.cookie.split(';');
+    for (let i = 0; i < cookies.length; i++) {
+      let cookie = cookies[i];
+      while (cookie.charAt(0) === ' ') {
+        cookie = cookie.substring(1, cookie.length);
+      }
+      if (cookie.indexOf(nomeEQ) === 0) {
+        let valore = decodeURIComponent(cookie.substring(nomeEQ.length, cookie.length));
+        console.log(`Cookie recuperato: ${nome} = ${valore}`);
+        return valore;
+      }
+    }
+    console.log(`Cookie non trovato: ${nome}`);
+    return null;
+  }
+
+  recuperaCookie("federico");
+
+  function rimuoviCookie(nome) {
+    salvaCookies(nome, '', -1);
+    console.log(`Cookie rimosso: ${nome}`);
+  };
+
+  rimuoviCookie("federico");
+
+  
