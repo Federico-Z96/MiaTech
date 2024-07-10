@@ -21,3 +21,10 @@ inner.innerText = "testo sostituito correttamente";
 let p = document.querySelector("#testo");
 p.style.backgroundColor = "purple";
 p.style.fontSize = "25px";
+
+//Es 102(innerHTML):
+
+
+let p = document.getElementById("testo");
+p.innerHTML = "<button>Click here</button>";
+
