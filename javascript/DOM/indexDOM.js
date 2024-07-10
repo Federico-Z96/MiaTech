@@ -15,3 +15,9 @@ console.log(`L'elemento selezionato tramite querrySelector è : `, headerSelecto
 
 const inner = document.getElementById("innerText");
 inner.innerText = "testo sostituito correttamente";
+
+//Es 101(modificare lo style):
+
+let p = document.querySelector("#testo");
+p.style.backgroundColor = "purple";
+p.style.fontSize = "25px";
