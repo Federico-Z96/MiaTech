@@ -41,20 +41,5 @@ for(let i = 1; i <= 5; i++) {
 
 document.body.appendChild(list);
 
-//Es 104(creazione di un form):
 
-let form = document.getElementById("myForm");
-
-form.addEventListener("submit", function(event) {
-    let nome = document.getElementById("nome").value.trim();
-    let cognome = document.getElementById("cognome").value.trim();
-
-    if (nome === '' || cognome === '') {
-        alert('Per favore compila entrambi i campi: Nome e Cognome.');
-        event.preventDefault();                                                // Impedisci l'invio del form
-    } else {
-        alert('Form inviato correttamente!'); 
-    }
-
-});
 
