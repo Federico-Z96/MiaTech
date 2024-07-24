@@ -6,6 +6,7 @@ module.exports = {
       primary: "#41463D",
       secondary: "rgb(15 23 42)",
       tertiary: " #000035",
+      "custom-blue": "blue",
   },
   margin: {
     first: "50%",
