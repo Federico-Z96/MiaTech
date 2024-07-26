@@ -7,10 +7,15 @@ const Counter = () => {
     const handleIncrement = () => {
         setCount(count + 1);
     };
+
+    const handleDecrement = () => {
+        setCount(count - 1);
+    };
     return (
         <div>
              <div>Count: {count} </div>
-             <button onClick={handleIncrement}>+</button>  
+             <button onClick={handleIncrement}>+</button>
+             <button onClick={handleDecrement}>-</button>
        </div>
     )
 }
