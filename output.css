@@ -720,6 +720,11 @@ video {
   margin-right: auto;
 }
 
+.mx-first {
+  margin-left: 50%;
+  margin-right: 50%;
+}
+
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -1809,6 +1814,11 @@ video {
   border-style: none;
 }
 
+.border-tertiary {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 53 / var(--tw-border-opacity));
+}
+
 .bg-\[rgb\(255\2c 0\2c 0\)\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
@@ -1819,14 +1829,34 @@ video {
   background-color: rgb(59 130 246 / var(--tw-bg-opacity));
 }
 
-.bg-purple-500 {
+.bg-primary {
   --tw-bg-opacity: 1;
-  background-color: rgb(168 85 247 / var(--tw-bg-opacity));
+  background-color: rgb(0 128 0 / var(--tw-bg-opacity));
+}
+
+.bg-secondary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
 }
 
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-purple {
+  --tw-bg-opacity: 1;
+  background-color: rgb(126 91 239 / var(--tw-bg-opacity));
+}
+
+.bg-orange {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 120 73 / var(--tw-bg-opacity));
+}
+
+.bg-yellow {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 200 44 / var(--tw-bg-opacity));
 }
 
 .decoration-slice {
@@ -1941,6 +1971,10 @@ video {
 
 .p-6 {
   padding: 1.5rem;
+}
+
+.p-pFirst {
+  padding: 50px;
 }
 
 .text-left {
@@ -2083,6 +2117,11 @@ video {
 .text-blue-500 {
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity));
+}
+
+.text-tertiary {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 53 / var(--tw-text-opacity));
 }
 
 .text-white {
@@ -2498,9 +2537,14 @@ video {
   }
 }
 
-.hover\:bg-purple-500:hover {
+.hover\:bg-orange:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(168 85 247 / var(--tw-bg-opacity));
+  background-color: rgb(255 120 73 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-yellow:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 200 44 / var(--tw-bg-opacity));
 }
 
 .hover\:font-bold:hover {
@@ -2533,5 +2577,13 @@ video {
 @media (min-width: 640px) {
   .sm\:underline {
     text-decoration-line: underline;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  @media (min-width: 1024px) {
+    .dark\:lg\:hover\:\[paint-order\:markers\]:hover {
+      paint-order: markers;
+    }
   }
 }

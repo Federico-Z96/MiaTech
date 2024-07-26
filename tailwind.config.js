@@ -7,6 +7,11 @@ module.exports = {
       secondary: "rgb(15 23 42)",
       tertiary: " #000035",
       "custom-blue": "blue",
+      primary: "green",
+      purple: '#7e5bef',
+      pink: '#ff49db',
+      orange: '#ff7849',
+      yellow: '#ffc82c',
   },
   margin: {
     first: "50%",
