@@ -12,6 +12,8 @@ module.exports = {
       pink: '#ff49db',
       orange: '#ff7849',
       yellow: '#ffc82c',
+      "custom-green": '#10B981',
+        "custom-red": '#EF4444',
   },
   margin: {
     first: "50%",
