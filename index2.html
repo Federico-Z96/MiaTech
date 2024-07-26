@@ -4,16 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="./output2.css" rel="stylesheet" />
+    <link href="output2.css" rel="stylesheet" />
   </head>
-  <body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 p-6">
-
+  <body class="bg-gray-100 text-gray-900 p-6">
     <header class="text-center mb-8 bg-white dark:bg-black dark:text-white">
       <h1 class="text-4xl font-bold text-customBlue dark:text-customPurple mb-4">Benvenuti nel mio Sito</h1>
       <p class="text-lg text-customGreen dark:text-customYellow">Un esempio di layout con Tailwind CSS</p>
     </header>
   
     <main class="space-y-6">
+      <div class="p-6">
+        <button 
+          id="darkModeToggle" 
+          class="bg-blue-500 text-white p-2 rounded mb-4"
+        >
+          Toggle Dark Mode
+        </button>
+        <p id="darkNodeStatus">
+          Inactive
+        </p>
+      </div>
       <section class="bg-gray-200 dark:bg-gray-800 p-6 rounded-lg shadow-md">
         <h2 class="text-2xl font-semibold text-customRed dark:text-customBlue">Sezione 1: Introduzione</h2>
         <p class="text-base text-gray-700 dark:text-gray-300">
@@ -43,5 +53,14 @@
         <a href="#" class="text-customGreen dark:text-customPurple hover:underline">Termini di Servizio</a>
       </p>
     </footer>
+
+    <script>
+        const toggleDarkMode = () => {
+            document.body.classList.toggle("dark");
+            document.querySelector("#darkNodeStatus").textContent = document.body.classList.contains("dark") ? "Active" : "Inactive";
+        };
+        document.querySelector("#darkModeToggle").addEventListener("click", toggleDarkMode);
+    </script>
+    
   </body>
 </html>
