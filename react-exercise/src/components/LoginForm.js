@@ -6,9 +6,15 @@ const LoginForm = () => {
     const [password, setPassword] = useState("");
 
     return(
-        <div>
-            <input type="text" value={userename} />
-            <input type="text" value={password} />
+        <div className="border-4 border-black">
+            <div>
+                <span>username: </span>
+                <input type="text" value={userename} />
+                </div>
+            <div>
+                <span>password: </span>
+                <input type="text" value={password} />
+                </div>
         </div>
     )
 }
