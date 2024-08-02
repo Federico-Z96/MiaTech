@@ -2,20 +2,33 @@ import React from "react";
 import { useState } from "react";
 
 const LoginForm = () => {
-    const [userename, setUsername] = useState("");
-    const [password, setPassword] = useState("");
+  const [form, setForm] = useState({
+    email: "",
+    password: "",
+  })
 
-    return(
-        <div className="border-4 border-black">
-            <div>
-                <span>username: </span>
-                <input type="text" value={userename} />
-                </div>
-            <div>
-                <span>password: </span>
-                <input type="text" value={password} />
-                </div>
-        </div>
-    )
-}
+ const handleChange = (e) => {
+    const {name , value } = e.target;
+
+    setForm({
+        ...form, 
+        [name] : value
+    })
+ }
+
+  const handleSubmit = (e) => {
+    e.preventDefault();   //per evitare il caricamento della pagina e svolgiamo cosi le operazioni che ci servono
+    alert(`email: ${form.email}password: ${form.password}`);
+  }
+
+  return (
+    <>
+    <form onSubmit={handleSubmit}>
+        <input type="email" name="email" value={form.email}  onChange={handleChange}/>
+        <input type="password" name="password" value={form.password} onChange={handleChange}/>
+        <button type="submit" >Submit</button>
+    </form>
+    </>
+  );
+};
 export default LoginForm;
